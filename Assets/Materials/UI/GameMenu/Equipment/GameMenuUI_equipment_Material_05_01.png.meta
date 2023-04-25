@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4b69bff233da17d42a565c98d2a87e8d
+guid: 7280a604250b3234c96e9f40b3f37f08
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -138,18 +138,40 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GameMenuUI_equipment_Material_05_01_0
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 600
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256ec7ab8b70e9d4f9a71f9a9b4fba09
+      internalID: 119739720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 85cf3ac99f5c2e643ad49e01ee34f75e
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GameMenuUI_equipment_Material_05_01_0: 119739720
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4b69bff233da17d42a565c98d2a87e8d
+guid: 3f979e176d6710847a57ff4218b47076
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -138,18 +138,84 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GameMenuUI_equipment_Material_05_03_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 921
+        width: 18
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119c4aca9b3f1e040987cb3ac675a1ab
+      internalID: -1166622632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameMenuUI_equipment_Material_05_03_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 780
+        width: 72
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9559003758af54498cfe3ef7fefcbd
+      internalID: 2078812531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameMenuUI_equipment_Material_05_03_2
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 36
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade66a3d71e913a4daa756b6ee41f7ca
+      internalID: -1800892782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 16ce4771a7b0dfa4cbf7b16c7961773b
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GameMenuUI_equipment_Material_05_03_1: 2078812531
+      GameMenuUI_equipment_Material_05_03_0: -1166622632
+      GameMenuUI_equipment_Material_05_03_2: -1800892782
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
