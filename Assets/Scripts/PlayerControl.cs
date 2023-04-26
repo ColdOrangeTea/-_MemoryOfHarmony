@@ -34,6 +34,15 @@ public class PlayerControl : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
 
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 10.0f;
+        }
+        else
+        {
+            speed = 5.0f;
+        }
+
         // //跳
         // if (Input.GetKeyDown(KeyCode.Space))
         // {

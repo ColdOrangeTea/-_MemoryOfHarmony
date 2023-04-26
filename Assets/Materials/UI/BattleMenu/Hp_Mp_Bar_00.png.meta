@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7a1d5461bceeb5f4eb89718dc867d2d3
+guid: 947289f48ddb4994abec81e63355d8b3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -112,91 +112,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<< HEAD
-=======
-      name: GameMenuUI_item_Material_03_00_0
+      name: Hp_Mp_Bar_00_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1194
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a10df8c67eebfa7468f620b862a325af
-      internalID: 1605791853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
->>>>>>> origin/main
-      name: GameMenuUI_item_Material_03_00_1
-      rect:
-        serializedVersion: 2
-        x: 1209
-        y: 789
-        width: 18
-        height: 84
-      alignment: 0
-<<<<<<< HEAD
-      pivot: {x: 0.5, y: 0.5}
-=======
-      pivot: {x: 0, y: 0}
->>>>>>> origin/main
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc4921eaebda8444fa0da9e3a0d02955
-      internalID: 2071215668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-<<<<<<< HEAD
-    - serializedVersion: 2
-      name: GameMenuUI_item_Material_03_00_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1194
-        height: 900
+        x: 6
+        y: 136
+        width: 180
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,39 +130,205 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e87ffed49e1b934d935a7ccb8b1d8b3
-      internalID: 221796179
+      spriteID: a1ead29599392e54fa2ffd7dcb9b97ad
+      internalID: -1417041828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameMenuUI_item_Material_03_00_0
+      name: Hp_Mp_Bar_00_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 959
-        width: 1194
-        height: 121
+        x: 198
+        y: 136
+        width: 180
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 211a9de5834959941be3b73ccdb8c684
-      internalID: 1605791853
+      spriteID: ff6730a7a4a55454b9020c8f8515e25c
+      internalID: 1597750718
       vertices: []
       indices: 
       edges: []
       weights: []
-=======
->>>>>>> origin/main
+    - serializedVersion: 2
+      name: Hp_Mp_Bar_00_1
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 136
+        width: 180
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da20eef72a8583940a7e5dd9eed71f0e
+      internalID: 1886588909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hp_Mp_Bar_00_0
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 136
+        width: 192
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad172f1b753c6e04ca1b29a01af9fe0b
+      internalID: 12654056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hp_Mp_Bar_00_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 144
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edf5ff0cde059b41ab00346f9b477a4
+      internalID: -322076260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hp_Mp_Bar_00_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 90
+        width: 144
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886bd72a27cd2f44e95d67e1a02588e7
+      internalID: -1411884330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hp_Mp_Bar_00_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 144
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984d6fd3236bd024080a4e4bd22d7b16
+      internalID: 772986482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hp_Mp_Bar_00_8
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 40
+        width: 144
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de5eed8fea625b4c8b49deb73763ba2
+      internalID: -411078324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hp_Mp_Bar_00_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 40
+        width: 144
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc778ce2eb25074381201e9f65371aa
+      internalID: 836251820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hp_Mp_Bar_00_6
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 40
+        width: 144
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3945a9ed5e8f0fd40981e414c2386ec7
+      internalID: 1367652382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d415286573b6ebf499858094480b53f7
+    spriteID: edd2c5e5855f03f4ab2ad297093ef450
     internalID: 0
     vertices: []
     indices: 
@@ -244,12 +336,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GameMenuUI_item_Material_03_00_1: 2071215668
-      GameMenuUI_item_Material_03_00_0: 1605791853
-<<<<<<< HEAD
-      GameMenuUI_item_Material_03_00_2: 221796179
-=======
->>>>>>> origin/main
+      Hp_Mp_Bar_00_8: -411078324
+      Hp_Mp_Bar_00_3: -1417041828
+      Hp_Mp_Bar_00_6: 1367652382
+      Hp_Mp_Bar_00_9: 772986482
+      Hp_Mp_Bar_00_2: 1597750718
+      Hp_Mp_Bar_00_7: 836251820
+      Hp_Mp_Bar_00_0: 12654056
+      Hp_Mp_Bar_00_4: -1411884330
+      Hp_Mp_Bar_00_5: -322076260
+      Hp_Mp_Bar_00_1: 1886588909
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

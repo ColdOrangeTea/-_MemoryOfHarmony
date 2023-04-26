@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7a1d5461bceeb5f4eb89718dc867d2d3
+guid: d67beac59f3e42f43af48bfa395f213a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -112,43 +112,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<< HEAD
-=======
-      name: GameMenuUI_item_Material_03_00_0
+      name: GameMenuUI_skill_Material_04_00_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1194
-        height: 1080
+        y: 780
+        width: 72
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,68 +130,125 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a10df8c67eebfa7468f620b862a325af
-      internalID: 1605791853
+      spriteID: 18a6295bed39bbe4e80034dbd5b207e7
+      internalID: 1213231544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
->>>>>>> origin/main
-      name: GameMenuUI_item_Material_03_00_1
+      name: GameMenuUI_skill_Material_04_00_1
       rect:
         serializedVersion: 2
-        x: 1209
-        y: 789
+        x: 192
+        y: 900
+        width: 240
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fa44aab2bc53041a9d9264d90e3e89
+      internalID: -469429766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameMenuUI_skill_Material_04_00_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 900
+        width: 240
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb02a6165fbaa71418571b0e701247f7
+      internalID: 280674756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameMenuUI_skill_Material_04_00_3
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 900
+        width: 240
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f2a0f28bd83814ebd5d295773fc56f
+      internalID: -932740598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameMenuUI_skill_Material_04_00_4
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 900
+        width: 240
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388e36256c120e246b6724a774d79d31
+      internalID: 129114200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameMenuUI_skill_Material_04_00_5
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 771
         width: 18
         height: 84
       alignment: 0
-<<<<<<< HEAD
-      pivot: {x: 0.5, y: 0.5}
-=======
       pivot: {x: 0, y: 0}
->>>>>>> origin/main
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc4921eaebda8444fa0da9e3a0d02955
-      internalID: 2071215668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-<<<<<<< HEAD
-    - serializedVersion: 2
-      name: GameMenuUI_item_Material_03_00_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1194
-        height: 900
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e87ffed49e1b934d935a7ccb8b1d8b3
-      internalID: 221796179
+      spriteID: bc5474d8482fcca40b7206ce8170ebb2
+      internalID: -336837013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameMenuUI_item_Material_03_00_0
+      name: GameMenuUI_skill_Material_04_00_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 959
-        width: 1194
-        height: 121
+        x: 738
+        y: 36
+        width: 36
+        height: 840
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,18 +256,16 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 211a9de5834959941be3b73ccdb8c684
-      internalID: 1605791853
+      spriteID: d4d6dbdeae2e33b4690e096a10ea5072
+      internalID: 163503484
       vertices: []
       indices: 
       edges: []
       weights: []
-=======
->>>>>>> origin/main
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d415286573b6ebf499858094480b53f7
+    spriteID: 4dfb945decfed5b4cbca204a3cd17354
     internalID: 0
     vertices: []
     indices: 
@@ -244,12 +273,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GameMenuUI_item_Material_03_00_1: 2071215668
-      GameMenuUI_item_Material_03_00_0: 1605791853
-<<<<<<< HEAD
-      GameMenuUI_item_Material_03_00_2: 221796179
-=======
->>>>>>> origin/main
+      GameMenuUI_skill_Material_04_00_0: 1213231544
+      GameMenuUI_skill_Material_04_00_6: 163503484
+      GameMenuUI_skill_Material_04_00_4: 129114200
+      GameMenuUI_skill_Material_04_00_3: -932740598
+      GameMenuUI_skill_Material_04_00_1: -469429766
+      GameMenuUI_skill_Material_04_00_5: -336837013
+      GameMenuUI_skill_Material_04_00_2: 280674756
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
