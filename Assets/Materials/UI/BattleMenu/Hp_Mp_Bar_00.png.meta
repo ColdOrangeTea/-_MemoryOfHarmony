@@ -245,9 +245,9 @@ TextureImporter:
       name: Hp_Mp_Bar_00_9
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 40
-        width: 144
+        width: 138
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -266,9 +266,9 @@ TextureImporter:
       name: Hp_Mp_Bar_00_8
       rect:
         serializedVersion: 2
-        x: 144
+        x: 147
         y: 40
-        width: 144
+        width: 138
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -287,9 +287,9 @@ TextureImporter:
       name: Hp_Mp_Bar_00_7
       rect:
         serializedVersion: 2
-        x: 288
+        x: 291
         y: 40
-        width: 144
+        width: 137
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

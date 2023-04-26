@@ -140,30 +140,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<< HEAD
-=======
-      name: GameMenuUI_item_Material_03_00_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1194
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a10df8c67eebfa7468f620b862a325af
-      internalID: 1605791853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
->>>>>>> origin/main
       name: GameMenuUI_item_Material_03_00_1
       rect:
         serializedVersion: 2
@@ -172,11 +148,7 @@ TextureImporter:
         width: 18
         height: 84
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
-=======
-      pivot: {x: 0, y: 0}
->>>>>>> origin/main
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,7 +160,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-<<<<<<< HEAD
     - serializedVersion: 2
       name: GameMenuUI_item_Material_03_00_2
       rect:
@@ -231,8 +202,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-=======
->>>>>>> origin/main
     outline: []
     physicsShape: []
     bones: []
@@ -246,10 +215,7 @@ TextureImporter:
     nameFileIdTable:
       GameMenuUI_item_Material_03_00_1: 2071215668
       GameMenuUI_item_Material_03_00_0: 1605791853
-<<<<<<< HEAD
       GameMenuUI_item_Material_03_00_2: 221796179
-=======
->>>>>>> origin/main
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

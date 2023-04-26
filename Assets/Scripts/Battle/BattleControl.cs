@@ -13,7 +13,6 @@ public class BattleControl : MonoBehaviour
     public float percentage_Hp = 1.0f;
     // HpBar全長180px 在畫面中到血槽底部時是(38,n)、滿血的位置是(218,n) 
     public float percentage_Hp_Image = 180.0f;
-
     public Image mpBar;
     public float maxMp = 100;
     public float mp = 100;
@@ -21,7 +20,12 @@ public class BattleControl : MonoBehaviour
     public float percentage_Mp = 1.0f;
     // MpBar全長180px 在畫面中到血槽底部時是(38,n)、滿血的位置是(218,n) 
     public float percentage_Mp_Image = 180.0f;
-    // ---
+    // ---按鈕的控制---
+    public Button button_Attack;
+    public Button button_Skill;
+    public Button button_Item;
+    public Button button_Equip;
+    public Button button_Flee;
 
     void Start()
     {
@@ -35,6 +39,26 @@ public class BattleControl : MonoBehaviour
         MpControl();
     }
 
+    public void AttackButtonControl()
+    {
+        Debug.Log("攻擊");
+    }
+    public void SkillButtonControl()
+    {
+        Debug.Log("技能");
+    }
+    public void ItemButtonControl()
+    {
+        Debug.Log("物品");
+    }
+    public void EquipButtonControl()
+    {
+        Debug.Log("裝備");
+    }
+    public void FleeButtonControl()
+    {
+        Debug.Log("逃跑");
+    }
     void HpControl()
     {
         if (hp < 0)
