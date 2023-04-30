@@ -20,7 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -148,7 +148,7 @@ TextureImporter:
         width: 1194
         height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -169,7 +169,7 @@ TextureImporter:
         width: 36
         height: 900
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -177,6 +177,48 @@ TextureImporter:
       bones: []
       spriteID: c232c3ec6600ae1499ff2296471fa605
       internalID: -438844549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameMenuUI_item_Material_03_01_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 876
+        width: 1194
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d788eb56544014386e0fcc544a11bf
+      internalID: 692308921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameMenuUI_item_Material_03_01_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1194
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148d0b4e7b3b3f24387601b467b7345f
+      internalID: -560097781
       vertices: []
       indices: 
       edges: []
@@ -192,6 +234,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      GameMenuUI_item_Material_03_01_3: -560097781
+      GameMenuUI_item_Material_03_01_2: 692308921
       GameMenuUI_item_Material_03_01_1: -438844549
       GameMenuUI_item_Material_03_01_0: -276281642
   spritePackingTag: 

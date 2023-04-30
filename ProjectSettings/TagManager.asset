@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - TeamNumber_00
+  - TeamNumber_01
+  - TeamNumber_02
+  - TeamNumber_03
+  - TeamNumber_04
+  - TeamNumber_05
+  - TeamNumber_06
   layers:
   - Default
   - TransparentFX
