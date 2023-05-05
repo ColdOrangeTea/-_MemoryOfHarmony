@@ -15,7 +15,6 @@ public class CharacterData_Info : MonoBehaviour // Character類資料分配、�
     [Header("單個角色的資訊")]
     [SerializeField]
     protected internal UnitData characterData;
-    protected internal CharacterData_Info characterData_Info;
 
     [Header("分配隊伍順序用")]
 
@@ -25,15 +24,5 @@ public class CharacterData_Info : MonoBehaviour // Character類資料分配、�
 
     // 分配用的暫存數，紀錄隊伍順序 
     public int temporary_TeamNumber = 99;
-
-    void Start()
-    {
-        characterData_Info = GetComponent<CharacterData_Info>();
-    }
-
-    void Update()
-    {
-
-    }
 
 }
