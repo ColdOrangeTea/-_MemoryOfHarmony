@@ -29,7 +29,7 @@ public class GameMenu_Button_Item : MonoBehaviour // 遊戲選單中的按鈕控
     // 按鈕功能 被點擊時紀錄自己(為了使用物品的用途)
     public void isClicked()
     {
-        // isClick = true;
+        isClick = true;
         item_Use = itemData_Info.itemData;
     }
 

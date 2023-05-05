@@ -26,14 +26,14 @@ public class BattleMenu_Show_UI_TeamMember : MonoBehaviour
     // 計算Hp比例
     public float percentage_Hp = 1.0f;
 
-    // HpBar全長180px 在畫面中到血槽底部時是(38,n)、滿血的位置是(218,n) 
-    public float percentage_Hp_For_Image = 180.0f;
+    // HpBar全長138px 在畫面中到血槽底部時是(73,n)、滿血的位置是(211,n) 
+    public float percentage_Hp_For_Image = 138.0f;
 
     // 計算Mp比例
     public float percentage_Mp = 1.0f;
 
-    // MpBar全長180px 在畫面中到血槽底部時是(38,n)、滿血的位置是(218,n) 
-    public float percentage_Mp_For_Image = 180.0f;
+    // MpBar全長138px 在畫面中到血槽底部時是(73,n)、滿血的位置是(211,n) 
+    public float percentage_Mp_For_Image = 138.0f;
 
     [Header("UI物件Image")]
     public Image hpBar;
@@ -56,7 +56,7 @@ public class BattleMenu_Show_UI_TeamMember : MonoBehaviour
         float float_Hp = characterData_Info.characterData.hp;
 
         percentage_Hp = (float_Hp / characterData_Info.characterData.maxHp);
-        percentage_Hp_For_Image = 38 + (180.0f * percentage_Hp);
+        percentage_Hp_For_Image = 73 + (138.0f * percentage_Hp);
         hpBar.transform.position = new Vector3(percentage_Hp_For_Image, hpBar.transform.position.y, hpBar.transform.position.z);
     }
     void MpControl()
@@ -64,7 +64,7 @@ public class BattleMenu_Show_UI_TeamMember : MonoBehaviour
         float float_Mp = characterData_Info.characterData.mp;
 
         percentage_Mp = (float_Mp / characterData_Info.characterData.maxMp);
-        percentage_Mp_For_Image = 38 + (180.0f * percentage_Mp);
+        percentage_Mp_For_Image = 73 + (138.0f * percentage_Mp);
         mpBar.transform.position = new Vector3(percentage_Mp_For_Image, mpBar.transform.position.y, mpBar.transform.position.z);
     }
 

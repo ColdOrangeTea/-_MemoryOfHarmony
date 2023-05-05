@@ -13,7 +13,7 @@ public class GameMenu_Show_UI_TeamNumber : MonoBehaviour // 遊戲選單中的UI
 
     [Header("資料 bool")]
 
-    // 用來確認在編排時按過的按鈕，避免按過的按鈕能再按
+    // 標記被按的按鈕
     public bool isClick = false;
 
     [Header("資料 int")]
@@ -44,8 +44,7 @@ public class GameMenu_Show_UI_TeamNumber : MonoBehaviour // 遊戲選單中的UI
     public Image hpBar;
     public Image mpBar;
 
-
-
+    [Header("資料 float")]
     // 計算Hp比例
     public float percentage_Hp = 1.0f;
     // HpBar全長138px 隊伍左欄在畫面中到血槽底部時是(1048,n)、滿血的位置是(1186,n) 
