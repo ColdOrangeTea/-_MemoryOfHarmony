@@ -14,14 +14,14 @@ public class CharacterData_Info : MonoBehaviour // Character類資料分配、�
 
     [Header("單個角色的資訊")]
     [SerializeField]
-    protected internal CharacterData characterData;
+    protected internal UnitData characterData;
     protected internal CharacterData_Info characterData_Info;
 
     [Header("分配隊伍順序用")]
 
     [SerializeField]
     // 分配用的暫存數，紀錄人物ID  99代表未分配
-    public CharacterData temporary_CharacterData;
+    public UnitData temporary_CharacterData;
 
     // 分配用的暫存數，紀錄隊伍順序 
     public int temporary_TeamNumber = 99;

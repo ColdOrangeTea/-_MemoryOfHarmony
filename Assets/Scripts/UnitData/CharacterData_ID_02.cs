@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterData_ID_04 : CharacterData
+public class CharacterData_ID_02 : UnitData
 {
     public override void InitCharacterData()
     {
-        characterID = 4;
+        characterID = 2;
 
         // 雙向紀錄角色在隊伍中的順序
-        teamNumber = 4;
-        characterName = "Fortuna";
-        maxHp = 800;
-        hp = 600;
-        maxMp = 700;
-        mp = 546;
+        teamNumber = 2;
+        characterName = "Erudite";
+        maxHp = 350;
+        hp = 300;
+        maxMp = 900;
+        mp = 900;
         attack = 999;
         defence = 999;
         speed = 999;

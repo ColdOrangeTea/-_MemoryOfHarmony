@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class CharacterData : MonoBehaviour
+public abstract class UnitData : MonoBehaviour
 {
 
     // ID值 預設999為無效值
@@ -42,7 +42,7 @@ public abstract class CharacterData : MonoBehaviour
 
 
     [SerializeField]
-    private CharacterData characterData;
+    private UnitData characterData;
 
     // 對應ID的子物件資料
     public CharacterData_Info info;

@@ -2,22 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterData_ID_05 : CharacterData
+public class CharacterData_ID_00 : UnitData
 {
     public override void InitCharacterData()
     {
-        characterID = 5;
+        characterID = 0;
 
         // 雙向紀錄角色在隊伍中的順序
-        teamNumber = 5;
-        characterName = "Refectio";
-        maxHp = 666;
-        hp = 111;
-        maxMp = 980;
-        mp = 880;
-        attack = 999;
-        defence = 999;
-        speed = 999;
+        teamNumber = 0;
+        characterName = "Dominate";
+        maxHp = 100;
+        hp = 50;
+        maxMp = 100;
+        mp = 80;
+        attack = 100;
+        defence = 100;
+        speed = 50;
         weaponID = 0;
         armorID = 0;
         accessoriesID = 0;
@@ -30,5 +30,8 @@ public class CharacterData_ID_05 : CharacterData
         totalAttack = 100;
         totalDefence = 100;
         totalSpeed = 50;
+
     }
+
+
 }

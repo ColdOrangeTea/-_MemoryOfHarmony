@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterData_ID_06 : CharacterData
+public class CharacterData_ID_06 : UnitData
 {
     public override void InitCharacterData()
     {
