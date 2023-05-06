@@ -55,7 +55,7 @@ public abstract class UnitData : MonoBehaviour
 
     void Awake()
     {
-        Debug.Log(" OKOK");
+        Debug.Log("角色資料建立");
         InitCharacterData();
         SetCharacterData();
 
@@ -102,14 +102,11 @@ public abstract class UnitData : MonoBehaviour
             mp = maxMp;
     }
 
+
     // 傳遞資料給CharacterData_Info
     private void SetCharacterData()
     {
         allInfo = InfoEmpty.GetComponentsInChildren<CharacterData_Info>();
-
-        // Debug.Log(InfoEmpty.GetComponentsInChildren<CharacterData_Info>());
-        // Debug.Log("InfoEmpty" + InfoEmpty + " ");
-
         foreach (CharacterData_Info a in allInfo)
         {
             CharacterData_Info u = a;
@@ -118,7 +115,6 @@ public abstract class UnitData : MonoBehaviour
                 // Debug.Log(u.GetComponent<CharacterData_Info>());
                 if (u.GetComponent<CharacterData_Info>().teamNumber == teamNumber)
                 {
-
                     if (characterID == 0)
                         characterData = GetComponent<CharacterData_ID_00>();
                     if (characterID == 1)
@@ -138,6 +134,8 @@ public abstract class UnitData : MonoBehaviour
                     info.characterData = characterData;
                     info.teamNumber = teamNumber;
 
+                    info.teamMember = new UnitData[7];
+                    info.teamMember[info.teamNumber] = info.characterData;
                 }
             }
         }

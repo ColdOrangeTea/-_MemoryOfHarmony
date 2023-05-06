@@ -11,9 +11,6 @@ public class GameMenu_Button_TeamNumber : MonoBehaviour // 遊戲選單中的按
     public CharacterData_Info characterData_Info;
     public GameMenu_Show_UI_TeamNumber show_UI_TeamNumber;
 
-    // 設靜態 去要抓的程式腳本抓數據
-    public static ItemData_Info itemData_Info;
-
     [Header("資料 bool")]
 
     // 是否在編排隊伍中
@@ -31,39 +28,14 @@ public class GameMenu_Button_TeamNumber : MonoBehaviour // 遊戲選單中的按
     // 在選單對成員使用物品的(按鈕功能)
     public void ItemUse()
     {
-        // Debug.Log("itemData_Info " + itemData_Info);
         // 在選單使用物品中
         if (GameMenu_Button_Item.isUsingItem)
         {
             // 使用的物品種類是否正確
-            if (itemData_Info.itemData.sortOfItem == 0)
+            if (Calculation_CharacterData.itemData.sortOfItem == 0)
             {
                 // 使用的物品是否能在地圖中使用
-                if (itemData_Info.itemData.item_UseInMap == 0)
-                {
-                    // if (!itemData_Info.isHarmful_Hp)
-                    // {
-
-                    //     if (characterID_Click == GameMenu_Show_UI_TeamNumber.characterData[GameMenu_Show_UI_TeamNumber.characterID_Click].maxHp)
-                    //     {
-                    //         Debug.Log("HP滿的，無法使用物品");
-                    //         return;
-                    //     }
-                    //     GameMenu_Show_UI_TeamNumber.characterData[GameMenu_Show_UI_TeamNumber.characterID_Click].hp += itemData_Info.effectAmount_00;
-                    // }
-
-                    // if (!itemData_Info.isHarmful_Mp)
-                    // {
-                    //     if (GameMenu_Show_UI_TeamNumber.characterData[GameMenu_Show_UI_TeamNumber.characterID_Click].mp == GameMenu_Show_UI_TeamNumber.characterData[GameMenu_Show_UI_TeamNumber.characterID_Click].maxMp)
-                    //     {
-                    //         Debug.Log("MP滿的，無法使用物品");
-                    //         return;
-                    //     }
-                    //     GameMenu_Show_UI_TeamNumber.characterData[GameMenu_Show_UI_TeamNumber.characterID_Click].mp += itemData_Info.effectAmount_01;
-                    // }
-
-                }
-                else
+                if (Calculation_CharacterData.itemData.item_UseInMap != 0)
                 {
                     Debug.Log("物品只能在戰鬥中使用");
                 }
@@ -72,9 +44,7 @@ public class GameMenu_Button_TeamNumber : MonoBehaviour // 遊戲選單中的按
             {
                 Debug.Log("物品種類不對");
             }
-
         }
-
     }
 
     // 按鈕功能 記錄在UI版面按下的隊伍成員資料
@@ -82,6 +52,7 @@ public class GameMenu_Button_TeamNumber : MonoBehaviour // 遊戲選單中的按
     {
         characterData_Info = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponent<CharacterData_Info>();
         show_UI_TeamNumber = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponent<GameMenu_Show_UI_TeamNumber>();
+        Calculation_CharacterData.unitData = characterData_Info.characterData;
     }
 
     // 按鈕功能 被點擊時顯示下自己的順序

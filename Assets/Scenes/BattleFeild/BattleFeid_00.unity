@@ -3356,9 +3356,10 @@ GameObject:
   m_Component:
   - component: {fileID: 922303392}
   - component: {fileID: 922303395}
+  - component: {fileID: 922303393}
+  - component: {fileID: 922303397}
   - component: {fileID: 922303394}
   - component: {fileID: 922303396}
-  - component: {fileID: 922303393}
   m_Layer: 5
   m_Name: BattleMenu_TeamMember_02
   m_TagString: Untagged
@@ -3435,6 +3436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teamNumber: 2
   characterData: {fileID: 0}
+  teamMember: []
   temporary_CharacterData: {fileID: 0}
   temporary_TeamNumber: 99
 --- !u!222 &922303395
@@ -3467,6 +3469,50 @@ MonoBehaviour:
   percentage_Mp_For_Image: 180
   hpBar: {fileID: 0}
   mpBar: {fileID: 0}
+--- !u!114 &922303397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922303391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 922303393}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &944793281
 GameObject:
   m_ObjectHideFlags: 0
@@ -5381,9 +5427,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1406277760}
   - component: {fileID: 1406277763}
+  - component: {fileID: 1406277761}
+  - component: {fileID: 1406277765}
   - component: {fileID: 1406277762}
   - component: {fileID: 1406277764}
-  - component: {fileID: 1406277761}
   m_Layer: 5
   m_Name: BattleMenu_TeamMember_01
   m_TagString: Untagged
@@ -5460,6 +5507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teamNumber: 1
   characterData: {fileID: 0}
+  teamMember: []
   temporary_CharacterData: {fileID: 0}
   temporary_TeamNumber: 99
 --- !u!222 &1406277763
@@ -5492,6 +5540,50 @@ MonoBehaviour:
   percentage_Mp_For_Image: 180
   hpBar: {fileID: 0}
   mpBar: {fileID: 0}
+--- !u!114 &1406277765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406277759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1406277761}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1420925645
 GameObject:
   m_ObjectHideFlags: 0
@@ -7119,9 +7211,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1829470236}
   - component: {fileID: 1829470238}
+  - component: {fileID: 1829470237}
+  - component: {fileID: 1829470241}
   - component: {fileID: 1829470239}
   - component: {fileID: 1829470240}
-  - component: {fileID: 1829470237}
   m_Layer: 5
   m_Name: BattleMenu_TeamMember_00
   m_TagString: Untagged
@@ -7206,6 +7299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teamNumber: 0
   characterData: {fileID: 0}
+  teamMember: []
   temporary_CharacterData: {fileID: 0}
   temporary_TeamNumber: 99
 --- !u!114 &1829470240
@@ -7230,6 +7324,50 @@ MonoBehaviour:
   percentage_Mp_For_Image: 180
   hpBar: {fileID: 0}
   mpBar: {fileID: 0}
+--- !u!114 &1829470241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829470235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1829470237}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1840075081
 GameObject:
   m_ObjectHideFlags: 0
@@ -7614,9 +7752,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1935723665}
   - component: {fileID: 1935723668}
+  - component: {fileID: 1935723666}
+  - component: {fileID: 1935723670}
   - component: {fileID: 1935723667}
   - component: {fileID: 1935723669}
-  - component: {fileID: 1935723666}
   m_Layer: 5
   m_Name: BattleMenu_TeamMember_03
   m_TagString: Untagged
@@ -7693,6 +7832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teamNumber: 3
   characterData: {fileID: 0}
+  teamMember: []
   temporary_CharacterData: {fileID: 0}
   temporary_TeamNumber: 99
 --- !u!222 &1935723668
@@ -7725,6 +7865,50 @@ MonoBehaviour:
   percentage_Mp_For_Image: 180
   hpBar: {fileID: 0}
   mpBar: {fileID: 0}
+--- !u!114 &1935723670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935723664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1935723666}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1936706854
 GameObject:
   m_ObjectHideFlags: 0

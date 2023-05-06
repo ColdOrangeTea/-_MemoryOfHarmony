@@ -16,48 +16,46 @@ public class GameMenu_Show_UI_TeamNumber : MonoBehaviour // 遊戲選單中的UI
     // 標記被按的按鈕
     public bool isClick = false;
 
-    [Header("資料 int")]
-
-    public int characterID_Click = 99;
+    // [Header("資料 int")]
 
     public string orderOfTeamMembers = "";
     [Header("UI物件 GameObject")]
     // 隊伍成員
-    public GameObject button_TeamNumber_00;
-    public GameObject button_TeamNumber_01;
-    public GameObject button_TeamNumber_02;
-    public GameObject button_TeamNumber_03;
-    public GameObject button_TeamNumber_04;
-    public GameObject button_TeamNumber_05;
-    public GameObject button_TeamNumber_06;
+    private GameObject button_TeamNumber_00;
+    private GameObject button_TeamNumber_01;
+    private GameObject button_TeamNumber_02;
+    private GameObject button_TeamNumber_03;
+    private GameObject button_TeamNumber_04;
+    private GameObject button_TeamNumber_05;
+    private GameObject button_TeamNumber_06;
 
     public GameObject teamNumber_Panel;
 
     [Header("UI物件Text")]
-    public Text Character_Name_Text;
-    public Text Character_Hp_Text;
-    public Text Character_Mp_Text;
+    private Text Character_Name_Text;
+    private Text Character_Hp_Text;
+    private Text Character_Mp_Text;
     public Text teamNumber_Panel_Text;
-    public Text Character_TeamNumber_Text;
+    private Text Character_TeamNumber_Text;
 
     [Header("UI物件Image")]
-    public Image hpBar;
-    public Image mpBar;
+    private Image hpBar;
+    private Image mpBar;
 
     [Header("資料 float")]
     // 計算Hp比例
-    public float percentage_Hp = 1.0f;
+    private float percentage_Hp = 1.0f;
     // HpBar全長138px 隊伍左欄在畫面中到血槽底部時是(1048,n)、滿血的位置是(1186,n) 
     // HpBar全長138px 隊伍右欄在畫面中到血槽底部時是(1528,n)、滿血的位置是(1666,n) 
 
-    public float percentage_Hp_For_Image = 138.0f;
+    private float percentage_Hp_For_Image = 138.0f;
 
     // 計算Mp比例
-    public float percentage_Mp = 1.0f;
+    private float percentage_Mp = 1.0f;
     // MpBar全長138px 隊伍左欄在畫面中到血槽底部時是(1048,n)、滿血的位置是(1186,n) 
     // MpBar全長138px 隊伍右欄在畫面中到血槽底部時是(1528,n)、滿血的位置是(1666,n) 
 
-    public float percentage_Mp_For_Image = 138.0f;
+    private float percentage_Mp_For_Image = 138.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -155,7 +153,6 @@ public class GameMenu_Show_UI_TeamNumber : MonoBehaviour // 遊戲選單中的UI
         Character_Hp_Text.text = characterData_Info.characterData.hp.ToString() + " / " + characterData_Info.characterData.maxHp.ToString();
         Character_Mp_Text.text = characterData_Info.characterData.mp.ToString() + " / " + characterData_Info.characterData.maxMp.ToString();
         Debug.Log("characterData_Info: " + characterData_Info + " characterData_Info.characterData.hp: " + characterData_Info.characterData.hp);
-
 
         HpControl();
         MpControl();

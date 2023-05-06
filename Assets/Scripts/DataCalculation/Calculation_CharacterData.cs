@@ -6,19 +6,44 @@ public class Calculation_CharacterData : MonoBehaviour
 {
     [Header("傳遞資料的物件")]
 
-    [Header("資料 int")]
-    // 設靜態，靜態變數是共通的，也就是說 只會有一個值變來變去XD 去要抓的程式腳本抓數據
-    public static int itemID_Use = 0;
-    public static int characterID_Click = 99;
-    // Start is called before the first frame update
-    void Start()
-    {
+    // 設靜態 抓取要用的物品的資訊
+    public static ItemData itemData;
 
-    }
+    // 設靜態 抓取要使用的對象
+    public static UnitData unitData;
 
-    // Update is called once per frame
     void Update()
     {
+        calculation();
+    }
 
+    void calculation()
+    {
+        if (unitData == null) return;
+        if (GameMenu_Button_Item.isUsingItem)
+        {
+            Debug.Log("使用道具 unitData:" + unitData + " itemData: " + itemData);
+            if (!itemData.isHarmful_Hp)
+            {
+                if (unitData.hp == unitData.maxHp)
+                {
+                    Debug.Log("HP滿的，無法使用物品");
+                    return;
+                }
+                unitData.hp += itemData.effectAmount_00;
+            }
+
+            if (!itemData.isHarmful_Mp)
+            {
+                if (unitData.hp == unitData.maxHp)
+                {
+                    Debug.Log("HP滿的，無法使用物品");
+                    return;
+                }
+                unitData.hp += itemData.effectAmount_01;
+            }
+        }
+
+        unitData = null;
     }
 }

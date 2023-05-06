@@ -71,7 +71,7 @@ public abstract class ItemData : MonoBehaviour
 
     void Awake()
     {
-        Debug.Log(" OKOK");
+        Debug.Log("物品資料建立");
         InitItemData();
         SetItemData();
 
