@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BattleMenu_Button_Action : MonoBehaviour
 {
@@ -52,6 +53,8 @@ public class BattleMenu_Button_Action : MonoBehaviour
     public void FleeButtonControl()
     {
         Debug.Log("逃跑");
+        SceneManager.LoadScene("WorldMap");
+
     }
 
 }

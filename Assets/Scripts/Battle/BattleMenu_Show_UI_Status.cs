@@ -14,8 +14,8 @@ public class BattleMenu_Show_UI_Status : MonoBehaviour
     // [Header("UI物件 GameObject")]
 
     [Header("UI物件Text")]
-    private Text Character_Hp_Text;
-    private Text Character_Mp_Text;
+    private Text character_Hp_Text;
+    private Text character_Mp_Text;
 
     // ---HP、MP的控制---
 
@@ -33,10 +33,12 @@ public class BattleMenu_Show_UI_Status : MonoBehaviour
     // MpBar全長180px 在畫面中到血槽底部時是(38,n)、滿血的位置是(218,n) 
     private float percentage_Mp_For_Image = 180.0f;
 
+    public GameObject battle_Status;
+
     [Header("UI物件Image")]
     private Image hpBar;
     private Image mpBar;
-    private Image Character_Image;
+    // private Image Character_Image;
 
     void Start()
     {
@@ -45,7 +47,24 @@ public class BattleMenu_Show_UI_Status : MonoBehaviour
 
     void Update()
     {
+        isClicked();
+    }
+    void isClicked()
+    {
+        GetTeamNumberInfo();
+        ShowBattle_Status();
+    }
 
+    void ShowBattle_Status()
+    {
+        if (BattleMenu_Button_TeamMember.isClick == true)
+        {
+            battle_Status.SetActive(true);
+        }
+        else
+        {
+            battle_Status.SetActive(false);
+        }
     }
 
     void HpControl()
@@ -68,16 +87,26 @@ public class BattleMenu_Show_UI_Status : MonoBehaviour
     // 讀取會顯示在UI上的角色資訊
     public void GetTeamNumberInfo()
     {
-        Character_Hp_Text.text = characterData_Info.characterData.baseUnitData[1].ToString() + " / " + characterData_Info.characterData.baseUnitData[0].ToString();
-        Character_Mp_Text.text = characterData_Info.characterData.baseUnitData[3].ToString() + " / " + characterData_Info.characterData.baseUnitData[2].ToString();
+        if (BattleMenu_Button_TeamMember.isClick == false) return;
+        characterData_Info = BattleMenu_Button_TeamMember.characterData_Info_Click;
+        character_Hp_Text.text = characterData_Info.characterData.baseUnitData[1].ToString() + " / " + characterData_Info.characterData.baseUnitData[0].ToString();
+        character_Mp_Text.text = characterData_Info.characterData.baseUnitData[3].ToString() + " / " + characterData_Info.characterData.baseUnitData[2].ToString();
 
         HpControl();
         MpControl();
     }
 
+
     void InitTeamNumberData_Object()
     {
         // 抓取物件
-        characterData_Info = GetComponent<CharacterData_Info>();
+        battle_Status = this.gameObject.transform.GetChild(0).gameObject;
+
+        character_Hp_Text = battle_Status.transform.GetChild(5).GetComponent<Text>();
+        character_Mp_Text = battle_Status.transform.GetChild(6).GetComponent<Text>();
+
+        hpBar = battle_Status.transform.GetChild(1).GetChild(1).GetChild(0).GetComponent<Image>();
+        mpBar = battle_Status.transform.GetChild(2).GetChild(1).GetChild(0).GetComponent<Image>();
+        //  Character_Images
     }
 }
