@@ -104,9 +104,9 @@ public class GameMenu_Show_UI_TeamNumber : MonoBehaviour // 遊戲選單中的UI
 
     void HpControl()
     {
-        float float_Hp = characterData_Info.characterData.hp;
-
-        percentage_Hp = (float_Hp / characterData_Info.characterData.maxHp);
+        /* baseUnitData 陣列的說明: 0: MaxHp   1: Hp  2: MaxMp   3: Mp  */
+        float float_Hp = characterData_Info.characterData.baseUnitData[1];
+        percentage_Hp = (float_Hp / characterData_Info.characterData.baseUnitData[0]);
 
         // UI顯示位置在左側 和 右側 的血條位置不一樣
         if (characterData_Info.characterData.teamNumber < 4)
@@ -119,9 +119,9 @@ public class GameMenu_Show_UI_TeamNumber : MonoBehaviour // 遊戲選單中的UI
     }
     void MpControl()
     {
-        float float_Mp = characterData_Info.characterData.mp;
+        float float_Mp = characterData_Info.characterData.baseUnitData[3];
+        percentage_Mp = (float_Mp / characterData_Info.characterData.baseUnitData[2]);
 
-        percentage_Mp = (float_Mp / characterData_Info.characterData.maxMp);
         // UI顯示位置在左側 和 右側 的血條位置不一樣
         if (characterData_Info.characterData.teamNumber < 4)
             percentage_Mp_For_Image = 1048 + (138.0f * percentage_Mp);
@@ -139,8 +139,8 @@ public class GameMenu_Show_UI_TeamNumber : MonoBehaviour // 遊戲選單中的UI
 
         Character_TeamNumber_Text.text = (1 + characterData_Info.characterData.teamNumber).ToString();
         Character_Name_Text.text = characterData_Info.characterData.characterName;
-        Character_Hp_Text.text = characterData_Info.characterData.hp.ToString() + " / " + characterData_Info.characterData.maxHp.ToString();
-        Character_Mp_Text.text = characterData_Info.characterData.mp.ToString() + " / " + characterData_Info.characterData.maxMp.ToString();
+        Character_Hp_Text.text = characterData_Info.characterData.baseUnitData[1].ToString() + " / " + characterData_Info.characterData.baseUnitData[0].ToString();
+        Character_Mp_Text.text = characterData_Info.characterData.baseUnitData[3].ToString() + " / " + characterData_Info.characterData.baseUnitData[2].ToString();
         // Debug.Log("characterData_Info: " + characterData_Info + " characterData_Info.characterData.hp: " + characterData_Info.characterData.hp);
 
         HpControl();

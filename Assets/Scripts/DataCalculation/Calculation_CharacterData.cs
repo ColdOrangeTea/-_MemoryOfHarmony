@@ -23,27 +23,27 @@ public class Calculation_CharacterData : MonoBehaviour
         if (GameMenu_Button_Item.isUsingItem)
         {
             Debug.Log("使用道具 unitData:" + unitData + " itemData: " + itemData);
-            if (!itemData.isHarmful_Hp)
+            if (itemData.isHarmful[0] == false)
             {
-                if (unitData.hp == unitData.maxHp)
+                if (unitData.baseUnitData[1] == unitData.baseUnitData[0])
                 {
                     Debug.Log(unitData.characterName + "HP滿的，無法使用物品");
                     unitData = null;
                     return;
                 }
-                unitData.hp += itemData.effectAmount_00;
+                unitData.baseUnitData[1] += itemData.effectAmount[0];
                 itemData.numberOfItems -= 1;
             }
 
-            if (!itemData.isHarmful_Mp)
+            if (itemData.isHarmful[1] == false)
             {
-                if (unitData.mp == unitData.maxMp)
+                if (unitData.baseUnitData[3] == unitData.baseUnitData[2])
                 {
                     Debug.Log(unitData.characterName + "MP滿的，無法使用物品");
                     unitData = null;
                     return;
                 }
-                unitData.mp += itemData.effectAmount_01;
+                unitData.baseUnitData[3] += itemData.effectAmount[1];
                 itemData.numberOfItems -= 1;
             }
         }

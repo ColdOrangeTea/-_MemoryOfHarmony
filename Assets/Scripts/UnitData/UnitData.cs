@@ -14,29 +14,25 @@ public abstract class UnitData : MonoBehaviour
     public int teamNumber = 999;
     [SerializeField]
     protected internal string characterName = " ";
-    [SerializeField]
-    protected internal int maxHp = 0;
-    [SerializeField]
-    protected internal int hp = 0;
-    [SerializeField]
-    protected internal int maxMp = 0;
-    [SerializeField]
-    protected internal int mp = 0;
-    protected internal int attack = 0;
-    protected internal int defence = 0;
-    protected internal int speed = 0;
-    protected internal int weaponID = 999;
-    protected internal int armorID = 999;
-    protected internal int accessoriesID = 999;
+
+    /* equipID 陣列的說明:
+    0: weaponID   1: armorID  2: accessoriesID */
+    public int[] equipID = new int[3];
+
+    /* baseUnitData 陣列的說明:
+    0: MaxHp   1: Hp  2: MaxMp   3: Mp
+    4: Attack  5: Defence    6: Speed */
+    [Header("角色資料 原數值")]
+    public int[] baseUnitData = new int[7];
+
+    /* totalUnitData 陣列的說明:
+    0: totalMaxHp   1: totalHp  2: totalMaxMp   3: totalMp
+    4: totalAttack  5: totalDefence    6: totalSpeed */
     [Header("角色資料 加上技能、裝備影響的數值")]
-    // 加上技能、裝備影響的數值
-    public int totalMaxHp = 0;
-    public int totalHp = 0;
-    public int totalMaxMp = 0;
-    public int totalMp = 0;
-    public int totalAttack = 0;
-    public int totalDefence = 0;
-    public int totalSpeed = 0;
+    public int[] totalUnitData = new int[7];
+
+
+
 
     [Header("傳遞資料的物件")]
 
@@ -84,22 +80,24 @@ public abstract class UnitData : MonoBehaviour
 
     private void HpCheck()
     {
-        float float_Hp = hp;
+        /* baseUnitData 陣列的說明:  0: MaxHp   1: Hp */
+        float float_Hp = baseUnitData[1];
 
-        if (hp < 0)
-            hp = 0;
-        if (hp > maxHp)
-            hp = maxHp;
+        if (baseUnitData[1] < 0)
+            baseUnitData[1] = 0;
+        if (baseUnitData[1] > baseUnitData[0])
+            baseUnitData[1] = baseUnitData[0];
     }
 
     private void MpCheck()
     {
-        float float_Mp = mp;
+        /* baseUnitData 陣列的說明:  2: MaxMp   3: Mp*/
+        float float_Mp = baseUnitData[3];
 
-        if (mp < 0)
-            mp = 0;
-        if (mp > maxMp)
-            mp = maxMp;
+        if (baseUnitData[3] < 0)
+            baseUnitData[3] = 0;
+        if (baseUnitData[3] > baseUnitData[2])
+            baseUnitData[3] = baseUnitData[2];
     }
 
 

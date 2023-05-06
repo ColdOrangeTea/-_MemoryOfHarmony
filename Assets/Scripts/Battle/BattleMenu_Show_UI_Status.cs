@@ -38,16 +38,11 @@ public class BattleMenu_Show_UI_Status : MonoBehaviour
     private Image mpBar;
     private Image Character_Image;
 
-
-
-
-    // Start is called before the first frame update
     void Start()
     {
         InitTeamNumberData_Object();
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -55,17 +50,17 @@ public class BattleMenu_Show_UI_Status : MonoBehaviour
 
     void HpControl()
     {
-        float float_Hp = characterData_Info.characterData.hp;
+        float float_Hp = characterData_Info.characterData.baseUnitData[1];
+        percentage_Hp = (float_Hp / characterData_Info.characterData.baseUnitData[0]);
 
-        percentage_Hp = (float_Hp / characterData_Info.characterData.maxHp);
         percentage_Hp_For_Image = 38 + (180.0f * percentage_Hp);
         hpBar.transform.position = new Vector3(percentage_Hp_For_Image, hpBar.transform.position.y, hpBar.transform.position.z);
     }
     void MpControl()
     {
-        float float_Mp = characterData_Info.characterData.mp;
+        float float_Mp = characterData_Info.characterData.baseUnitData[3];
+        percentage_Mp = (float_Mp / characterData_Info.characterData.baseUnitData[2]);
 
-        percentage_Mp = (float_Mp / characterData_Info.characterData.maxMp);
         percentage_Mp_For_Image = 38 + (180.0f * percentage_Mp);
         mpBar.transform.position = new Vector3(percentage_Mp_For_Image, mpBar.transform.position.y, mpBar.transform.position.z);
     }
@@ -73,10 +68,8 @@ public class BattleMenu_Show_UI_Status : MonoBehaviour
     // 讀取會顯示在UI上的角色資訊
     public void GetTeamNumberInfo()
     {
-
-        Character_Hp_Text.text = characterData_Info.characterData.hp.ToString() + " / " + characterData_Info.characterData.maxHp.ToString();
-        Character_Mp_Text.text = characterData_Info.characterData.mp.ToString() + " / " + characterData_Info.characterData.maxMp.ToString();
-        Debug.Log("characterData_Info: " + characterData_Info + " characterData_Info.characterData.hp: " + characterData_Info.characterData.hp);
+        Character_Hp_Text.text = characterData_Info.characterData.baseUnitData[1].ToString() + " / " + characterData_Info.characterData.baseUnitData[0].ToString();
+        Character_Mp_Text.text = characterData_Info.characterData.baseUnitData[3].ToString() + " / " + characterData_Info.characterData.baseUnitData[2].ToString();
 
         HpControl();
         MpControl();
@@ -84,7 +77,6 @@ public class BattleMenu_Show_UI_Status : MonoBehaviour
 
     void InitTeamNumberData_Object()
     {
-
         // 抓取物件
         characterData_Info = GetComponent<CharacterData_Info>();
     }
