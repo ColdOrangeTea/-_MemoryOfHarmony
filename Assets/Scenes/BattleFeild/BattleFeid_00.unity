@@ -647,17 +647,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teamNumber: 999
   characterName: ' '
-  maxHp: 0
-  hp: 0
-  maxMp: 0
-  mp: 0
-  totalMaxHp: 999
-  totalHp: 999
-  totalMaxMp: 999
-  totalMp: 999
-  totalAttack: 100
-  totalDefence: 100
-  totalSpeed: 50
+  equipID: 000000000000000000000000
+  baseUnitData: 00000000000000000000000000000000000000000000000000000000
+  totalUnitData: 00000000000000000000000000000000000000000000000000000000
   characterData: {fileID: 0}
   info: {fileID: 0}
   allInfo: []
@@ -676,17 +668,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teamNumber: 999
   characterName: ' '
-  maxHp: 0
-  hp: 0
-  maxMp: 0
-  mp: 0
-  totalMaxHp: 999
-  totalHp: 999
-  totalMaxMp: 999
-  totalMp: 999
-  totalAttack: 100
-  totalDefence: 100
-  totalSpeed: 50
+  equipID: 000000000000000000000000
+  baseUnitData: 00000000000000000000000000000000000000000000000000000000
+  totalUnitData: 00000000000000000000000000000000000000000000000000000000
   characterData: {fileID: 0}
   info: {fileID: 0}
   allInfo: []
@@ -705,17 +689,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teamNumber: 999
   characterName: ' '
-  maxHp: 0
-  hp: 0
-  maxMp: 0
-  mp: 0
-  totalMaxHp: 999
-  totalHp: 999
-  totalMaxMp: 999
-  totalMp: 999
-  totalAttack: 100
-  totalDefence: 100
-  totalSpeed: 50
+  equipID: 000000000000000000000000
+  baseUnitData: 00000000000000000000000000000000000000000000000000000000
+  totalUnitData: 00000000000000000000000000000000000000000000000000000000
   characterData: {fileID: 0}
   info: {fileID: 0}
   allInfo: []
@@ -734,17 +710,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teamNumber: 999
   characterName: ' '
-  maxHp: 0
-  hp: 0
-  maxMp: 0
-  mp: 0
-  totalMaxHp: 999
-  totalHp: 999
-  totalMaxMp: 999
-  totalMp: 999
-  totalAttack: 100
-  totalDefence: 100
-  totalSpeed: 50
+  equipID: 000000000000000000000000
+  baseUnitData: 00000000000000000000000000000000000000000000000000000000
+  totalUnitData: 00000000000000000000000000000000000000000000000000000000
   characterData: {fileID: 0}
   info: {fileID: 0}
   allInfo: []
@@ -763,17 +731,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teamNumber: 999
   characterName: ' '
-  maxHp: 0
-  hp: 0
-  maxMp: 0
-  mp: 0
-  totalMaxHp: 999
-  totalHp: 999
-  totalMaxMp: 999
-  totalMp: 999
-  totalAttack: 100
-  totalDefence: 100
-  totalSpeed: 50
+  equipID: 000000000000000000000000
+  baseUnitData: 00000000000000000000000000000000000000000000000000000000
+  totalUnitData: 00000000000000000000000000000000000000000000000000000000
   characterData: {fileID: 0}
   info: {fileID: 0}
   allInfo: []
@@ -792,17 +752,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teamNumber: 999
   characterName: ' '
-  maxHp: 0
-  hp: 0
-  maxMp: 0
-  mp: 0
-  totalMaxHp: 999
-  totalHp: 999
-  totalMaxMp: 999
-  totalMp: 999
-  totalAttack: 100
-  totalDefence: 100
-  totalSpeed: 50
+  equipID: 000000000000000000000000
+  baseUnitData: 00000000000000000000000000000000000000000000000000000000
+  totalUnitData: 00000000000000000000000000000000000000000000000000000000
   characterData: {fileID: 0}
   info: {fileID: 0}
   allInfo: []
@@ -821,17 +773,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teamNumber: 999
   characterName: ' '
-  maxHp: 0
-  hp: 0
-  maxMp: 0
-  mp: 0
-  totalMaxHp: 999
-  totalHp: 999
-  totalMaxMp: 999
-  totalMp: 999
-  totalAttack: 100
-  totalDefence: 100
-  totalSpeed: 50
+  equipID: 000000000000000000000000
+  baseUnitData: 00000000000000000000000000000000000000000000000000000000
+  totalUnitData: 00000000000000000000000000000000000000000000000000000000
   characterData: {fileID: 0}
   info: {fileID: 0}
   allInfo: []
@@ -946,6 +890,7 @@ Transform:
   m_Children:
   - {fileID: 222352588}
   - {fileID: 1762290922}
+  - {fileID: 1806497651}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2972,8 +2917,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BattleControl, Assembly-CSharp
+      - m_Target: {fileID: 1806497652}
+        m_TargetAssemblyTypeName: BattleMenu_Button_Action, Assembly-CSharp
         m_MethodName: ItemButtonControl
         m_Mode: 1
         m_Arguments:
@@ -3434,9 +3379,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47f98f4afd957364f9d2ed118acf58f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 2
   characterData: {fileID: 0}
+  show_UI_TeamNumber: {fileID: 0}
   teamMember: []
+  isClick: 0
+  teamNumber: 2
   temporary_CharacterData: {fileID: 0}
   temporary_TeamNumber: 99
 --- !u!222 &922303395
@@ -4934,8 +4881,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BattleControl, Assembly-CSharp
+      - m_Target: {fileID: 1806497652}
+        m_TargetAssemblyTypeName: BattleMenu_Button_Action, Assembly-CSharp
         m_MethodName: AttackButtonControl
         m_Mode: 1
         m_Arguments:
@@ -4995,8 +4942,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1881187556}
+  m_Children: []
   m_Father: {fileID: 1420925646}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5068,9 +5014,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1806497650}
         m_TargetAssemblyTypeName: BattleControl, Assembly-CSharp
-        m_MethodName: SkillButtonControl
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5505,9 +5451,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47f98f4afd957364f9d2ed118acf58f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 1
   characterData: {fileID: 0}
+  show_UI_TeamNumber: {fileID: 0}
   teamMember: []
+  isClick: 0
+  teamNumber: 1
   temporary_CharacterData: {fileID: 0}
   temporary_TeamNumber: 99
 --- !u!222 &1406277763
@@ -5719,9 +5667,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1806497650}
         m_TargetAssemblyTypeName: BattleControl, Assembly-CSharp
-        m_MethodName: FleeButtonControl
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6954,31 +6902,20 @@ MonoBehaviour:
   itemID: 99
   itemName: ' '
   itemDescription: ' '
-  sortOfItem: 0
   numberOfItems: 99
   price: 0
+  sortOfItem: 0
   item_UseInMap: 0
-  isHarmful_Hp: 0
-  isHarmful_Mp: 0
-  isHarmful_MaxHp: 0
-  isHarmful_MaxMp: 0
-  isHarmful_MAXATK: 0
-  isHarmful_MaxDEF: 0
-  isHarmful_MaxSPEED: 0
-  effectRate_00: 1
-  effectRate_01: 1
-  effectRate_02: 1
-  effectRate_03: 1
-  effectRate_04: 1
-  effectRate_05: 1
-  effectRate_06: 1
-  effectAmount_00: 0
-  effectAmount_01: 0
-  effectAmount_02: 0
-  effectAmount_03: 0
-  effectAmount_04: 0
-  effectAmount_05: 0
-  effectAmount_06: 0
+  isHarmful: 00000000000000
+  effectRate:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  effectAmount: 00000000000000000000000000000000000000000000000000000000
   info: {fileID: 0}
   allInfo: []
   InfoEmpty: {fileID: 0}
@@ -6997,31 +6934,20 @@ MonoBehaviour:
   itemID: 99
   itemName: ' '
   itemDescription: ' '
-  sortOfItem: 0
   numberOfItems: 99
   price: 0
+  sortOfItem: 0
   item_UseInMap: 0
-  isHarmful_Hp: 0
-  isHarmful_Mp: 0
-  isHarmful_MaxHp: 0
-  isHarmful_MaxMp: 0
-  isHarmful_MAXATK: 0
-  isHarmful_MaxDEF: 0
-  isHarmful_MaxSPEED: 0
-  effectRate_00: 1
-  effectRate_01: 1
-  effectRate_02: 1
-  effectRate_03: 1
-  effectRate_04: 1
-  effectRate_05: 1
-  effectRate_06: 1
-  effectAmount_00: 0
-  effectAmount_01: 0
-  effectAmount_02: 0
-  effectAmount_03: 0
-  effectAmount_04: 0
-  effectAmount_05: 0
-  effectAmount_06: 0
+  isHarmful: 00000000000000
+  effectRate:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  effectAmount: 00000000000000000000000000000000000000000000000000000000
   info: {fileID: 0}
   allInfo: []
   InfoEmpty: {fileID: 0}
@@ -7040,31 +6966,20 @@ MonoBehaviour:
   itemID: 99
   itemName: ' '
   itemDescription: ' '
-  sortOfItem: 0
   numberOfItems: 99
   price: 0
+  sortOfItem: 0
   item_UseInMap: 0
-  isHarmful_Hp: 0
-  isHarmful_Mp: 0
-  isHarmful_MaxHp: 0
-  isHarmful_MaxMp: 0
-  isHarmful_MAXATK: 0
-  isHarmful_MaxDEF: 0
-  isHarmful_MaxSPEED: 0
-  effectRate_00: 1
-  effectRate_01: 1
-  effectRate_02: 1
-  effectRate_03: 1
-  effectRate_04: 1
-  effectRate_05: 1
-  effectRate_06: 1
-  effectAmount_00: 0
-  effectAmount_01: 0
-  effectAmount_02: 0
-  effectAmount_03: 0
-  effectAmount_04: 0
-  effectAmount_05: 0
-  effectAmount_06: 0
+  isHarmful: 00000000000000
+  effectRate:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  effectAmount: 00000000000000000000000000000000000000000000000000000000
   info: {fileID: 0}
   allInfo: []
   InfoEmpty: {fileID: 0}
@@ -7131,9 +7046,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1806497650}
         m_TargetAssemblyTypeName: BattleControl, Assembly-CSharp
-        m_MethodName: EquipButtonControl
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7201,6 +7116,65 @@ RectTransform:
   m_AnchoredPosition: {x: 673, y: -956}
   m_SizeDelta: {x: 288, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1806497650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1806497651}
+  - component: {fileID: 1806497652}
+  - component: {fileID: 1806497653}
+  m_Layer: 0
+  m_Name: BattleSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1806497651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806497650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 227058187}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1806497652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806497650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d6fd198db799042a5b3164c847f9a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1806497653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806497650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01848aebb1cad624cb8477a00d877d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleSystem: {fileID: 0}
+  playerHp: 100
 --- !u!1 &1829470235
 GameObject:
   m_ObjectHideFlags: 0
@@ -7297,9 +7271,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47f98f4afd957364f9d2ed118acf58f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 0
   characterData: {fileID: 0}
+  show_UI_TeamNumber: {fileID: 0}
   teamMember: []
+  isClick: 0
+  teamNumber: 0
   temporary_CharacterData: {fileID: 0}
   temporary_TeamNumber: 99
 --- !u!114 &1829470240
@@ -7459,42 +7435,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840075081}
   m_CullTransparentMesh: 1
---- !u!1 &1881187555
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1881187556}
-  m_Layer: 5
-  m_Name: Action_Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1881187556
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881187555}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1334108857}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1893814395
 GameObject:
   m_ObjectHideFlags: 0
@@ -7830,9 +7770,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47f98f4afd957364f9d2ed118acf58f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 3
   characterData: {fileID: 0}
+  show_UI_TeamNumber: {fileID: 0}
   teamMember: []
+  isClick: 0
+  teamNumber: 3
   temporary_CharacterData: {fileID: 0}
   temporary_TeamNumber: 99
 --- !u!222 &1935723668

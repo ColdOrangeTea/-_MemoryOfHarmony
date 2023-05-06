@@ -4,21 +4,32 @@ using UnityEngine;
 
 public class BattleMenu_Button_Action : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public event System.EventHandler<StatusEventargs> StatusChanging;
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
+    {
+
+    }
+
+    void Attack(int damageValue)
     {
 
     }
 
     public void AttackButtonControl()
     {
+        int damageValue = 10;
         Debug.Log("攻擊");
+        if (this.StatusChanging != null)
+        {
+            StatusChanging(this, new StatusEventargs(StatusEventargs.ActType.Damage, "Player", damageValue));
+
+        }
     }
     public void SkillButtonControl()
     {
@@ -26,7 +37,13 @@ public class BattleMenu_Button_Action : MonoBehaviour
     }
     public void ItemButtonControl()
     {
+        int healValue = 10;
         Debug.Log("物品");
+        if (this.StatusChanging != null)
+        {
+            StatusChanging(this, new StatusEventargs(StatusEventargs.ActType.Heal, "Player", healValue));
+
+        }
     }
     public void EquipButtonControl()
     {
