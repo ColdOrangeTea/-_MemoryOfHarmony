@@ -14,10 +14,10 @@ public class Calculation_CharacterData : MonoBehaviour
 
     void Update()
     {
-        calculation();
+        UseItemCalculation();
     }
 
-    void calculation()
+    void UseItemCalculation()
     {
         if (unitData == null) return;
         if (GameMenu_Button_Item.isUsingItem)
@@ -27,23 +27,26 @@ public class Calculation_CharacterData : MonoBehaviour
             {
                 if (unitData.hp == unitData.maxHp)
                 {
-                    Debug.Log("HP滿的，無法使用物品");
+                    Debug.Log(unitData.characterName + "HP滿的，無法使用物品");
+                    unitData = null;
                     return;
                 }
                 unitData.hp += itemData.effectAmount_00;
+                itemData.numberOfItems -= 1;
             }
 
             if (!itemData.isHarmful_Mp)
             {
-                if (unitData.hp == unitData.maxHp)
+                if (unitData.mp == unitData.maxMp)
                 {
-                    Debug.Log("HP滿的，無法使用物品");
+                    Debug.Log(unitData.characterName + "MP滿的，無法使用物品");
+                    unitData = null;
                     return;
                 }
-                unitData.hp += itemData.effectAmount_01;
+                unitData.mp += itemData.effectAmount_01;
+                itemData.numberOfItems -= 1;
             }
         }
-
         unitData = null;
     }
 }

@@ -9,9 +9,7 @@ public class GameMenu_Button_TeamNumber : MonoBehaviour // 遊戲選單中的按
 
     // 對應ID的子物件資料
     public CharacterData_Info characterData_Info;
-    public GameMenu_Show_UI_TeamNumber show_UI_TeamNumber;
-
-    [Header("資料 bool")]
+    // public GameMenu_Show_UI_TeamNumber show_UI_TeamNumber;
 
     // 是否在編排隊伍中
     public static bool isArranging = false;
@@ -51,7 +49,7 @@ public class GameMenu_Button_TeamNumber : MonoBehaviour // 遊戲選單中的按
     public void GetInfo()
     {
         characterData_Info = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponent<CharacterData_Info>();
-        show_UI_TeamNumber = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponent<GameMenu_Show_UI_TeamNumber>();
+        // show_UI_TeamNumber = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponent<GameMenu_Show_UI_TeamNumber>();
         Calculation_CharacterData.unitData = characterData_Info.characterData;
     }
 
@@ -60,13 +58,12 @@ public class GameMenu_Button_TeamNumber : MonoBehaviour // 遊戲選單中的按
     {
         if (isArranging)
         {
-            show_UI_TeamNumber.isClick = true;
-            if (show_UI_TeamNumber.isClick)
+            characterData_Info.isClick = true;
+            if (characterData_Info.isClick && characterData_Info.show_UI_TeamNumber.teamNumber_Panel.activeInHierarchy == false)
             {
                 Debug.Log("亮起來");
-                show_UI_TeamNumber.teamNumber_Panel.SetActive(true);
-                show_UI_TeamNumber.orderOfTeamMembers = GameMenu_Button_TeamNumber.orderOfTeamMembers.ToString();
-                show_UI_TeamNumber.teamNumber_Panel_Text.text = show_UI_TeamNumber.orderOfTeamMembers;
+                characterData_Info.show_UI_TeamNumber.teamNumber_Panel.SetActive(true);
+                characterData_Info.show_UI_TeamNumber.teamNumber_Panel_Text.text = (1 + characterData_Info.temporary_TeamNumber).ToString();
             }
         }
     }
@@ -77,7 +74,7 @@ public class GameMenu_Button_TeamNumber : MonoBehaviour // 遊戲選單中的按
         if (isArranging)
         {
             if (orderOfTeamMembers == CharacterData_Info.numberOfMembers) return; // 排到目前隊伍上限的順序不能再點
-            if (show_UI_TeamNumber.isClick) return; // 編排中點過的不能再點
+            if (characterData_Info.isClick) return; // 編排中點過的不能再點
 
 
             // 暫時記錄當下點選的人物的ID
@@ -96,6 +93,7 @@ public class GameMenu_Button_TeamNumber : MonoBehaviour // 遊戲選單中的按
     // 按鈕功能 決定開始隊伍編排
     public void TeamArrangementButtonControl()
     {
+        if (isArranging == true) return;
         Debug.Log("開始編排隊伍順序");
         isArranging = true;
         orderOfTeamMembers = 0;

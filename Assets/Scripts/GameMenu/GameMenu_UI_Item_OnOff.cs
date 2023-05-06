@@ -21,6 +21,7 @@ public class GameMenu_UI_Item_OnOff : MonoBehaviour // 遊戲選單中的ItemDat
     public Text item_NumberOfItems_Text;
     public Text item_Description_Text;
     public Text item_Button_Use_Text;
+    public Text item_Button_Use_numberOfItems_Text;
 
     void Start()
     {
@@ -31,6 +32,13 @@ public class GameMenu_UI_Item_OnOff : MonoBehaviour // 遊戲選單中的ItemDat
     {
         UI_Onoff();
         isClicked();
+        UseItem();
+    }
+
+    void UseItem()
+    {
+        if (GameMenu_Button_Item.isUsingItem)
+            GetItem_NumberOfItems();
     }
 
     void UI_Onoff()
@@ -112,9 +120,17 @@ public class GameMenu_UI_Item_OnOff : MonoBehaviour // 遊戲選單中的ItemDat
 
     }
 
+    // 顯示物品敘述 用在 UseItem()
+    void GetItem_NumberOfItems()
+    {
+        item_Button_Use_numberOfItems_Text.text = "  道具數量:" + GameMenu_Button_Item.item_Click.numberOfItems.ToString();
+        Debug.Log("物品數量: " + item_Button_Use_numberOfItems_Text.text);
+    }
+
     // 顯示物品敘述 用在 isClicked()
     void GetItem_description()
     {
+
         item_Description_Text.text = GameMenu_Button_Item.item_Click.itemDescription;
         Debug.Log("物品敘述: " + item_Description_Text.text);
     }
@@ -159,6 +175,7 @@ public class GameMenu_UI_Item_OnOff : MonoBehaviour // 遊戲選單中的ItemDat
 
         item_Description_Text = transform.parent.GetChild(0).GetChild(0).GetComponent<Text>();
         item_Button_Use_Text = item_Button_Use_00.transform.GetChild(2).GetChild(0).GetComponent<Text>();
+        item_Button_Use_numberOfItems_Text = item_Button_Use_01.transform.GetChild(1).GetChild(0).GetComponent<Text>();
     }
 
 }

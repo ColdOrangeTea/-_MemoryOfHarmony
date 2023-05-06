@@ -8,17 +8,6 @@ public class GameMenu_Show_UI_TeamNumber : MonoBehaviour // 遊戲選單中的UI
     [Header("傳遞資料的物件")]
     public CharacterData_Info characterData_Info;
 
-    // // 自己這個程式的物件
-    // public GameMenu_Show_UI_TeamNumber gameMenu_Show_UI_TeamNumber;
-
-    [Header("資料 bool")]
-
-    // 標記被按的按鈕
-    public bool isClick = false;
-
-    // [Header("資料 int")]
-
-    public string orderOfTeamMembers = "";
     [Header("UI物件 GameObject")]
     // 隊伍成員
     private GameObject button_TeamNumber_00;
@@ -56,23 +45,17 @@ public class GameMenu_Show_UI_TeamNumber : MonoBehaviour // 遊戲選單中的UI
     // MpBar全長138px 隊伍右欄在畫面中到血槽底部時是(1528,n)、滿血的位置是(1666,n) 
 
     private float percentage_Mp_For_Image = 138.0f;
-    // Start is called before the first frame update
+
     void Start()
     {
         InitTeamNumberData_Object();
         GetTeamNumberInfo();
-
-    }
-    // Awake 先於Start啟動 
-    void Awake()
-    {
-
     }
 
-    // Update is called once per frame
     void Update()
     {
         SetTeamNumber();
+        UseItem();
     }
 
     // 所有物件的Update都執行過 LateUpdate 才會執行
@@ -91,10 +74,16 @@ public class GameMenu_Show_UI_TeamNumber : MonoBehaviour // 遊戲選單中的UI
         characterData_Info.temporary_TeamNumber = 99;
         characterData_Info.temporary_CharacterData = null;
         teamNumber_Panel.SetActive(false);
-        if (isClick)
+        if (characterData_Info.isClick)
         {
-            isClick = false;
+            characterData_Info.isClick = false;
         }
+    }
+
+    void UseItem()
+    {
+        if (GameMenu_Button_Item.isUsingItem)
+            GetTeamNumberInfo();
     }
 
     //  設定隊伍順序
@@ -152,7 +141,7 @@ public class GameMenu_Show_UI_TeamNumber : MonoBehaviour // 遊戲選單中的UI
         Character_Name_Text.text = characterData_Info.characterData.characterName;
         Character_Hp_Text.text = characterData_Info.characterData.hp.ToString() + " / " + characterData_Info.characterData.maxHp.ToString();
         Character_Mp_Text.text = characterData_Info.characterData.mp.ToString() + " / " + characterData_Info.characterData.maxMp.ToString();
-        Debug.Log("characterData_Info: " + characterData_Info + " characterData_Info.characterData.hp: " + characterData_Info.characterData.hp);
+        // Debug.Log("characterData_Info: " + characterData_Info + " characterData_Info.characterData.hp: " + characterData_Info.characterData.hp);
 
         HpControl();
         MpControl();

@@ -76,10 +76,10 @@ public abstract class UnitData : MonoBehaviour
         {
             // 更改 CharacterData_ID_n 紀錄的數值
             teamNumber = info.temporary_TeamNumber;
-            Debug.Log("characterData: " + characterData + "  " + "info: " + info + "  " + "characterData.teamNumber:  " + teamNumber);
+
+            // Debug.Log("characterData: " + characterData + "  " + "info: " + info + "  " + "characterData.teamNumber:  " + teamNumber);
             SetCharacterData();
         }
-
     }
 
     private void HpCheck()
