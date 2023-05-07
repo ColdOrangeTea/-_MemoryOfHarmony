@@ -19,6 +19,7 @@ public class Calculation_CharacterData : MonoBehaviour
 
     void UseItemCalculation()
     {
+        if (itemData == null) return;
         if (unitData == null) return;
         if (GameMenu_Button_Item.isUsingItem)
         {
@@ -48,5 +49,9 @@ public class Calculation_CharacterData : MonoBehaviour
             }
         }
         unitData = null;
+        if (Enemy_Encounter.isEncounterEnemy == true)
+        {
+            itemData = null;
+        }
     }
 }

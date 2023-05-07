@@ -31,6 +31,7 @@ public class BattleMenu_Show_UI_Action : MonoBehaviour
 
     void ShowBattleMenu_Action()
     {
+        if (BattleMenu_Button_TeamMember.isClick == false) return;
         if (BattleMenu_Button_TeamMember.isClick == true)
         {
             battleMenu_Action.SetActive(true);

@@ -57,6 +57,7 @@ public class BattleMenu_Show_UI_Status : MonoBehaviour
 
     void ShowBattle_Status()
     {
+        if (BattleMenu_Button_TeamMember.isClick == false) return;
         if (BattleMenu_Button_TeamMember.isClick == true)
         {
             battle_Status.SetActive(true);
@@ -65,6 +66,7 @@ public class BattleMenu_Show_UI_Status : MonoBehaviour
         {
             battle_Status.SetActive(false);
         }
+
     }
 
     void HpControl()

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public abstract class UnitData : MonoBehaviour
 {
-
     // ID值 預設999為無效值
 
     [Header("角色資料")]
@@ -31,8 +30,13 @@ public abstract class UnitData : MonoBehaviour
     [Header("角色資料 加上技能、裝備影響的數值")]
     public int[] totalUnitData = new int[7];
 
-
-
+    [Header("進戰鬥前記錄的數值")]
+    // 進戰鬥前用來記錄的數值
+    public static int currentTeamNumber = 0;
+    public static int[] currentBaseUnitData = new int[7];
+    public static int[] currentTotalUnitData = new int[7];
+    public static int[] currentEquipID = new int[3];
+    public bool isRecord = false;
 
     [Header("傳遞資料的物件")]
 
@@ -54,7 +58,6 @@ public abstract class UnitData : MonoBehaviour
         Debug.Log("角色資料建立");
         InitCharacterData();
         SetCharacterData();
-
     }
 
     void Update()
@@ -62,6 +65,36 @@ public abstract class UnitData : MonoBehaviour
         HpCheck();
         MpCheck();
         SetTeamNumber();
+        RecordCurrentData();
+    }
+
+
+    // 記錄進戰鬥前的數值
+    private void RecordCurrentData()
+    {
+        if (Enemy_Encounter.isEncounterEnemy == false) return;
+        // Debug.Log("狀態isEncounterEnemy: " + Enemy_Encounter.isEncounterEnemy);
+        // Debug.Log("戰鬥前紀錄了沒" + characterName + baseUnitData[1]);
+
+        currentTeamNumber = teamNumber;
+        currentBaseUnitData = baseUnitData;
+        currentTotalUnitData = totalUnitData;
+        currentEquipID = equipID;
+
+        isRecord = true;
+        foreach (CharacterData_Info a in allInfo)
+        {
+            if (a.characterData.isRecord == false) return;
+        }
+
+        if (isRecord == false) return;
+
+        foreach (CharacterData_Info a in allInfo)
+        {
+            if (a.characterData.isRecord == true)
+                a.characterData.isRecord = false;
+        }
+        Enemy_Encounter.isEncounterEnemy = false;
     }
 
     //  設定隊伍順序

@@ -30,6 +30,4 @@ public class CharacterData_ID_00 : UnitData
         baseUnitData[0],baseUnitData[1],baseUnitData[2],baseUnitData[3],
         baseUnitData[4],baseUnitData[5],baseUnitData[6]};
     }
-
-
 }

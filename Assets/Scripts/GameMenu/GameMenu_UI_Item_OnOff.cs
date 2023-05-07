@@ -166,14 +166,15 @@ public class GameMenu_UI_Item_OnOff : MonoBehaviour // 遊戲選單中的ItemDat
 
     private void InitItemData_Object()
     {
-        item_Layer_00 = transform.parent.GetChild(0).gameObject;
-        item_Layer_01 = transform.parent.GetChild(1).gameObject;
-        item_Button = this.gameObject.transform.parent.GetChild(2).gameObject;
+        item_Layer_00 = transform.parent.parent.GetChild(0).GetChild(4).GetChild(0).gameObject;
+        item_Layer_01 = transform.parent.parent.GetChild(0).GetChild(4).GetChild(1).gameObject;
+        item_Button = transform.parent.parent.GetChild(0).GetChild(4).GetChild(2).gameObject;
+
         item_Button_ItemLabel = item_Button.transform.GetChild(0).gameObject;
         item_Button_Use_00 = item_Button.transform.GetChild(1).gameObject;
         item_Button_Use_01 = item_Button.transform.GetChild(2).gameObject;
 
-        item_Description_Text = transform.parent.GetChild(0).GetChild(0).GetComponent<Text>();
+        item_Description_Text = transform.parent.parent.GetChild(0).GetChild(4).GetChild(0).GetChild(0).GetComponent<Text>();
         item_Button_Use_Text = item_Button_Use_00.transform.GetChild(2).GetChild(0).GetComponent<Text>();
         item_Button_Use_numberOfItems_Text = item_Button_Use_01.transform.GetChild(1).GetChild(0).GetComponent<Text>();
     }
