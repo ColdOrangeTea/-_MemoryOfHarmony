@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class StatusSystem : MonoBehaviour
 {
-
-
     void Start()
     {
 
     }
-
 }
 
 

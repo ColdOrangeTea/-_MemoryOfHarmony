@@ -2,34 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class BattleMenu_Button_Action : MonoBehaviour
 {
-
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-
-    }
-
-    void Attack(int damageValue)
-    {
-
-    }
-
+    public const int attack = 0;
+    public const int skill = 1;
+    public const int item = 2;
+    public const int equip = 3;
+    public const int flee = 4;
+    public static bool[] actTypeBool = new bool[5];
     public void AttackButtonControl()
     {
+        actTypeBool[attack] = true;
         Debug.Log("攻擊");
     }
     public void SkillButtonControl()
     {
+        // actType[skill] = true;
         Debug.Log("技能");
     }
     public void ItemButtonControl()
     {
+        actTypeBool[item] = true;
         Debug.Log("物品");
     }
     public void EquipButtonControl()
@@ -38,12 +32,23 @@ public class BattleMenu_Button_Action : MonoBehaviour
     }
     public void FleeButtonControl()
     {
+        actTypeBool[flee] = true;
         Debug.Log("逃跑");
+        SetNull();
         SceneManager.LoadScene("WorldMap");
 
     }
 
+    void SetNull()
+    {
+        if (actTypeBool[flee] == true)
+        {
+            BattleMenu_Button_TeamMember.characterData_Info_Click = null;
+        }
+    }
+
 }
+
 
 // public class BattleMenu_Button_Action : MonoBehaviour
 // {

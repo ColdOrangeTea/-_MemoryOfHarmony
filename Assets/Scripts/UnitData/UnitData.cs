@@ -4,6 +4,15 @@ using UnityEngine;
 
 public abstract class UnitData : MonoBehaviour
 {
+
+    const int BASE_UNIT_DATA_MAX_HP = 0;
+    const int BASE_UNIT_DATA_HP = 1;
+    const int BASE_UNIT_DATA_MAX_MP = 2;
+    const int BASE_UNIT_DATA_MP = 3;
+    const int BASE_UNIT_DATA_ATTACK = 4;
+    const int BASE_UNIT_DATA_DEFENCE = 5;
+    const int BASE_UNIT_DATA_SPEED = 6;
+
     // ID值 預設999為無效值
 
     [Header("角色資料")]
@@ -65,37 +74,37 @@ public abstract class UnitData : MonoBehaviour
         HpCheck();
         MpCheck();
         SetTeamNumber();
-        RecordCurrentData();
+        // RecordCurrentData();
     }
 
 
-    // 記錄進戰鬥前的數值
-    private void RecordCurrentData()
-    {
-        if (Enemy_Encounter.isEncounterEnemy == false) return;
-        // Debug.Log("狀態isEncounterEnemy: " + Enemy_Encounter.isEncounterEnemy);
-        // Debug.Log("戰鬥前紀錄了沒" + characterName + baseUnitData[1]);
+    // // 記錄進戰鬥前的數值
+    // private void RecordCurrentData()
+    // {
+    //     if (Enemy_Encounter.isEncounterEnemy == false) return;
+    //     // Debug.Log("狀態isEncounterEnemy: " + Enemy_Encounter.isEncounterEnemy);
+    //     // Debug.Log("戰鬥前紀錄了沒" + characterName + baseUnitData[1]);
 
-        currentTeamNumber = teamNumber;
-        currentBaseUnitData = baseUnitData;
-        currentTotalUnitData = totalUnitData;
-        currentEquipID = equipID;
+    //     currentTeamNumber = teamNumber;
+    //     currentBaseUnitData = baseUnitData;
+    //     currentTotalUnitData = totalUnitData;
+    //     currentEquipID = equipID;
 
-        isRecord = true;
-        foreach (CharacterData_Info a in allInfo)
-        {
-            if (a.characterData.isRecord == false) return;
-        }
+    //     isRecord = true;
+    //     foreach (CharacterData_Info a in allInfo)
+    //     {
+    //         if (a.characterData.isRecord == false) return;
+    //     }
 
-        if (isRecord == false) return;
+    //     if (isRecord == false) return;
 
-        foreach (CharacterData_Info a in allInfo)
-        {
-            if (a.characterData.isRecord == true)
-                a.characterData.isRecord = false;
-        }
-        Enemy_Encounter.isEncounterEnemy = false;
-    }
+    //     foreach (CharacterData_Info a in allInfo)
+    //     {
+    //         if (a.characterData.isRecord == true)
+    //             a.characterData.isRecord = false;
+    //     }
+    //     Enemy_Encounter.isEncounterEnemy = false;
+    // }
 
     //  設定隊伍順序
     void SetTeamNumber()

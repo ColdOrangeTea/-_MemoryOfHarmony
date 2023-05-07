@@ -72,7 +72,7 @@ public class BattleMenu_Show_UI_TeamMember : MonoBehaviour
         Character_Name_Text.text = characterData_Info.characterData.characterName;
         Character_Hp_Text.text = characterData_Info.characterData.baseUnitData[1].ToString() + " / " + characterData_Info.characterData.baseUnitData[0].ToString();
         Character_Mp_Text.text = characterData_Info.characterData.baseUnitData[3].ToString() + " / " + characterData_Info.characterData.baseUnitData[2].ToString();
-        Debug.Log("characterData_Info: " + characterData_Info + " characterData_Info.characterData.hp: " + characterData_Info.characterData.baseUnitData[1]);
+        // Debug.Log("characterData_Info: " + characterData_Info + " characterData_Info.characterData.hp: " + characterData_Info.characterData.baseUnitData[1]);
 
         HpControl();
         MpControl();
