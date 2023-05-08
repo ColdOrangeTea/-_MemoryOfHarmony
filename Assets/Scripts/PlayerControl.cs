@@ -20,14 +20,14 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
-        if (GameMenuControl.isOpenGameMenu == true) return;
-        Move();
-    }
-
-    void FixUpdate()
-    {
         // if (GameMenuControl.isOpenGameMenu == true) return;
         // Move();
+    }
+
+    private void FixedUpdate()
+    {
+        if (GameMenuControl.isOpenGameMenu == true) return;
+        Move();
     }
 
     void Move()
