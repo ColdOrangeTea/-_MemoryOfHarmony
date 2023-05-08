@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class EnemyData_Info : MonoBehaviour // Character類資料分配、存取 放入Button_TeamNumber_n
 {
     [Header("傳遞資料的物件")]
@@ -19,8 +19,17 @@ public class EnemyData_Info : MonoBehaviour // Character類資料分配、存取
 
     public int enemyID = 999;
 
+    public bool isDead;
+
+    public static int deadCount = 0;
+
     void Start()
     {
+    }
+
+    private void Update()
+    {
+
 
     }
 

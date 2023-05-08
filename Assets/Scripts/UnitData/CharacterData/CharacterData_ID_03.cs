@@ -83,7 +83,7 @@ public class CharacterData_ID_03 : UnitData
         0: MaxHp   1: Hp  2: MaxMp   3: Mp   4: Attack  5: Defence    6: Speed */
         baseUnitData = new int[] {
             400,300,400,200,
-            999,999,70};
+            600,999,70};
 
         /* equipID 陣列的說明:  
         0: weaponID   1: armorID  2: accessoriesID */

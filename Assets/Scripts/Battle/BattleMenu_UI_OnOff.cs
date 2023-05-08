@@ -15,7 +15,11 @@ public class BattleMenu_UI_OnOff : MonoBehaviour
     // ---------------------------- Action 的資料 ----------------------------
     [Header("UI物件 GameObject")]
     public GameObject battleMenu_Action;
+
+    public GameObject battleOver; // 手動掛
     // [Header("UI物件Image")]
+
+    public Text Talking;
 
     void Start()
     {
@@ -24,23 +28,41 @@ public class BattleMenu_UI_OnOff : MonoBehaviour
 
     void Update()
     {
-        Cancel();
         isClicked();
-    }
+        GetTalking();
 
-    void Cancel()
-    {
-        if (Input.GetMouseButtonDown(1))
+        if (EnemyData_Info.deadCount == 2)
         {
-            BattleMenu_Button_TeamMember.characterData_Info_Click = null;
-            Debug.Log("右鍵有沒有反應" + BattleMenu_Button_TeamMember.characterData_Info_Click);
+            battleOver.SetActive(true);
         }
     }
+
     void isClicked()
     {
         // GetTeamNumberInfo();
         ShowBattleMenu_Action();
         ShowBattle_Status();
+    }
+    public const int attack = 0;
+    public const int skill = 1;
+    public const int item = 2;
+    public const int equip = 3;
+    public const int flee = 4;
+
+    void GetTalking()
+    {
+        if (EnemyData_Info.deadCount == 2)
+        {
+            Talking.text = "戰鬥結束";
+
+        }
+        if (BattleMenu_Button_Action.actTypeBool[attack] == false) return;
+        if (BattleMenu_Button_EnemyMember.enemy_Info_Click == null) return;
+
+        Talking.text = BattleMenu_Button_TeamMember.characterData_Info_Click.characterData.unitName +
+                   "對" + BattleMenu_Button_EnemyMember.enemy_Info_Click.enemyData.unitName + "造成" +
+                   BattleMenu_Button_TeamMember.characterData_Info_Click.characterData.baseUnitData[4].ToString() + "傷害";
+
     }
 
 
@@ -87,6 +109,5 @@ public class BattleMenu_UI_OnOff : MonoBehaviour
         // 抓取物件
         battle_Status = transform.parent.GetChild(0).GetChild(2).gameObject;
         battleMenu_Action = transform.parent.GetChild(0).GetChild(3).gameObject;
-
     }
 }
