@@ -9,19 +9,25 @@ public class PlayerControl : MonoBehaviour
     // public bool isOnGround = true;
     private float horizontalInput;
     private float forwardInput;
+    // public CharacterController cc;
     public Rigidbody playerRb;
 
-    // Start is called before the first frame update
     void Start()
     {
+        // cc = GetComponent<CharacterController>();
         playerRb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (GameMenuControl.isOpenGameMenu == true) return;
         Move();
+    }
+
+    void FixUpdate()
+    {
+        // if (GameMenuControl.isOpenGameMenu == true) return;
+        // Move();
     }
 
     void Move()
