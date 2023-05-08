@@ -685,16 +685,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 500851d1e99cb7d42a6e4dec5d791fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 999
-  characterName: ' '
-  equipID: 000000000000000000000000
+  characterID: 999
+  unitName: ' '
   baseUnitData: 00000000000000000000000000000000000000000000000000000000
   totalUnitData: 00000000000000000000000000000000000000000000000000000000
-  isRecord: 0
+  equipID: 000000000000000000000000
   characterData: {fileID: 0}
-  info: {fileID: 0}
-  allInfo: []
-  InfoEmpty: {fileID: 670908054}
+  characterData_InfoEmpty: {fileID: 670908054}
+  teamNumber: 999
 --- !u!114 &222352590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,16 +705,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3bef385700cde44a4d01ffc7dfa004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 999
-  characterName: ' '
-  equipID: 000000000000000000000000
+  characterID: 999
+  unitName: ' '
   baseUnitData: 00000000000000000000000000000000000000000000000000000000
   totalUnitData: 00000000000000000000000000000000000000000000000000000000
-  isRecord: 0
+  equipID: 000000000000000000000000
   characterData: {fileID: 0}
-  info: {fileID: 0}
-  allInfo: []
-  InfoEmpty: {fileID: 670908054}
+  characterData_InfoEmpty: {fileID: 670908054}
+  teamNumber: 999
 --- !u!114 &222352591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,16 +725,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db05ee9f4f9f7544a35cb51c45ff502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 999
-  characterName: ' '
-  equipID: 000000000000000000000000
+  characterID: 999
+  unitName: ' '
   baseUnitData: 00000000000000000000000000000000000000000000000000000000
   totalUnitData: 00000000000000000000000000000000000000000000000000000000
-  isRecord: 0
+  equipID: 000000000000000000000000
   characterData: {fileID: 0}
-  info: {fileID: 0}
-  allInfo: []
-  InfoEmpty: {fileID: 670908054}
+  characterData_InfoEmpty: {fileID: 670908054}
+  teamNumber: 999
 --- !u!114 &222352592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -751,16 +745,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee727a2dc0ea3941ba36940b7a9557d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 999
-  characterName: ' '
-  equipID: 000000000000000000000000
+  characterID: 999
+  unitName: ' '
   baseUnitData: 00000000000000000000000000000000000000000000000000000000
   totalUnitData: 00000000000000000000000000000000000000000000000000000000
-  isRecord: 0
+  equipID: 000000000000000000000000
   characterData: {fileID: 0}
-  info: {fileID: 0}
-  allInfo: []
-  InfoEmpty: {fileID: 670908054}
+  characterData_InfoEmpty: {fileID: 670908054}
+  teamNumber: 999
 --- !u!114 &222352593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,16 +765,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a204c652f42523a47a952c954a19690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 999
-  characterName: ' '
-  equipID: 000000000000000000000000
+  characterID: 999
+  unitName: ' '
   baseUnitData: 00000000000000000000000000000000000000000000000000000000
   totalUnitData: 00000000000000000000000000000000000000000000000000000000
-  isRecord: 0
+  equipID: 000000000000000000000000
   characterData: {fileID: 0}
-  info: {fileID: 0}
-  allInfo: []
-  InfoEmpty: {fileID: 670908054}
+  characterData_InfoEmpty: {fileID: 670908054}
+  teamNumber: 999
 --- !u!114 &222352594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,16 +785,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5436e1932afee94faa87cd96d5f5827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 999
-  characterName: ' '
-  equipID: 000000000000000000000000
+  characterID: 999
+  unitName: ' '
   baseUnitData: 00000000000000000000000000000000000000000000000000000000
   totalUnitData: 00000000000000000000000000000000000000000000000000000000
-  isRecord: 0
+  equipID: 000000000000000000000000
   characterData: {fileID: 0}
-  info: {fileID: 0}
-  allInfo: []
-  InfoEmpty: {fileID: 670908054}
+  characterData_InfoEmpty: {fileID: 670908054}
+  teamNumber: 999
 --- !u!114 &222352595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,16 +805,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f565474b1c591e4e901c127b44f5112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 999
-  characterName: ' '
-  equipID: 000000000000000000000000
+  characterID: 999
+  unitName: ' '
   baseUnitData: 00000000000000000000000000000000000000000000000000000000
   totalUnitData: 00000000000000000000000000000000000000000000000000000000
-  isRecord: 0
+  equipID: 000000000000000000000000
   characterData: {fileID: 0}
-  info: {fileID: 0}
-  allInfo: []
-  InfoEmpty: {fileID: 670908054}
+  characterData_Info: {fileID: 0}
+  characterData_AllInfo: []
+  characterData_InfoEmpty: {fileID: 670908054}
+  teamNumber: 999
 --- !u!1 &226674735
 GameObject:
   m_ObjectHideFlags: 0
@@ -2466,6 +2454,7 @@ GameObject:
   - component: {fileID: 665131308}
   - component: {fileID: 665131307}
   - component: {fileID: 665131306}
+  - component: {fileID: 665131309}
   m_Layer: 5
   m_Name: BattleMenu_Enemy_02
   m_TagString: Untagged
@@ -2575,6 +2564,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665131304}
   m_CullTransparentMesh: 1
+--- !u!114 &665131309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665131304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41350b1a6759d61499d5220c60f39de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 0}
+  enemyMember: []
+  isClick: 0
+  enemyID: 999
 --- !u!1 &667882667
 GameObject:
   m_ObjectHideFlags: 0
@@ -2587,6 +2592,7 @@ GameObject:
   - component: {fileID: 667882671}
   - component: {fileID: 667882670}
   - component: {fileID: 667882669}
+  - component: {fileID: 667882672}
   m_Layer: 5
   m_Name: BattleMenu_Enemy_00
   m_TagString: Untagged
@@ -2696,6 +2702,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667882667}
   m_CullTransparentMesh: 1
+--- !u!114 &667882672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667882667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41350b1a6759d61499d5220c60f39de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 0}
+  enemyMember: []
+  isClick: 0
+  enemyID: 999
 --- !u!1 &670908054
 GameObject:
   m_ObjectHideFlags: 0
@@ -7702,6 +7724,7 @@ GameObject:
   - component: {fileID: 1787306944}
   - component: {fileID: 1787306943}
   - component: {fileID: 1787306942}
+  - component: {fileID: 1787306945}
   m_Layer: 5
   m_Name: BattleMenu_Enemy_03
   m_TagString: Untagged
@@ -7811,6 +7834,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787306940}
   m_CullTransparentMesh: 1
+--- !u!114 &1787306945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787306940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41350b1a6759d61499d5220c60f39de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 0}
+  enemyMember: []
+  isClick: 0
+  enemyID: 999
 --- !u!1 &1829470235
 GameObject:
   m_ObjectHideFlags: 0
@@ -8727,6 +8766,7 @@ GameObject:
   - component: {fileID: 1968030647}
   - component: {fileID: 1968030646}
   - component: {fileID: 1968030645}
+  - component: {fileID: 1968030648}
   m_Layer: 5
   m_Name: BattleMenu_Enemy_01
   m_TagString: Untagged
@@ -8836,6 +8876,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968030643}
   m_CullTransparentMesh: 1
+--- !u!114 &1968030648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968030643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41350b1a6759d61499d5220c60f39de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 0}
+  enemyMember: []
+  isClick: 0
+  enemyID: 999
 --- !u!1 &2011818922
 GameObject:
   m_ObjectHideFlags: 0

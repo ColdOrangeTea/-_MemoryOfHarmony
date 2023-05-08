@@ -51,10 +51,10 @@ public class Battle_ObjectPosition : MonoBehaviour // 掛ObjectControl
             // hero陣列的第0個物件是Empty 所以是1開始
             Debug.Log("hero.Length: " + hero.Length);
 
-            hero[info.characterData.teamNumber + 1].transform.position = new Vector3(
-            unitPosition[info.characterData.teamNumber + 1].x,
-            unitPosition[info.characterData.teamNumber + 1].y,
-            unitPosition[info.characterData.teamNumber + 1].z);
+            hero[info.teamNumber + 1].transform.position = new Vector3(
+            unitPosition[info.teamNumber + 1].x,
+            unitPosition[info.teamNumber + 1].y,
+            unitPosition[info.teamNumber + 1].z);
 
             // 清除暫存的成員資料
             info = null;
@@ -63,19 +63,19 @@ public class Battle_ObjectPosition : MonoBehaviour // 掛ObjectControl
         else // 點了隊伍成員
         {
             // 已經移動到前面就不用再動了
-            if (hero[BattleMenu_Button_TeamMember.characterData_Info_Click.characterData.teamNumber + 1].transform.position == moveForward) return;
+            if (hero[BattleMenu_Button_TeamMember.characterData_Info_Click.teamNumber + 1].transform.position == moveForward) return;
             Debug.Log("hero.動起來: " + BattleMenu_Button_TeamMember.characterData_Info_Click);
 
             // 上一個點的成員還沒歸位 要回去
-            if (info != null && hero[info.characterData.teamNumber + 1].transform.position == moveForward)
+            if (info != null && hero[info.teamNumber + 1].transform.position == moveForward)
             {
-                hero[info.characterData.teamNumber + 1].transform.position = new Vector3(
-            unitPosition[info.characterData.teamNumber + 1].x,
-            unitPosition[info.characterData.teamNumber + 1].y,
-            unitPosition[info.characterData.teamNumber + 1].z);
+                hero[info.teamNumber + 1].transform.position = new Vector3(
+            unitPosition[info.teamNumber + 1].x,
+            unitPosition[info.teamNumber + 1].y,
+            unitPosition[info.teamNumber + 1].z);
             }
             // 角色移動到前面
-            hero[BattleMenu_Button_TeamMember.characterData_Info_Click.characterData.teamNumber + 1].transform.position = moveForward;
+            hero[BattleMenu_Button_TeamMember.characterData_Info_Click.teamNumber + 1].transform.position = moveForward;
             info = BattleMenu_Button_TeamMember.characterData_Info_Click;
         }
     }

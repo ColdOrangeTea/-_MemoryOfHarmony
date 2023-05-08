@@ -69,7 +69,7 @@ public class BattleMenu_Show_UI_TeamMember : MonoBehaviour
     // 讀取會顯示在UI上的角色資訊
     public void GetTeamNumberInfo()
     {
-        Character_Name_Text.text = characterData_Info.characterData.characterName;
+        Character_Name_Text.text = characterData_Info.characterData.unitName;
         Character_Hp_Text.text = characterData_Info.characterData.baseUnitData[1].ToString() + " / " + characterData_Info.characterData.baseUnitData[0].ToString();
         Character_Mp_Text.text = characterData_Info.characterData.baseUnitData[3].ToString() + " / " + characterData_Info.characterData.baseUnitData[2].ToString();
         // Debug.Log("characterData_Info: " + characterData_Info + " characterData_Info.characterData.hp: " + characterData_Info.characterData.baseUnitData[1]);

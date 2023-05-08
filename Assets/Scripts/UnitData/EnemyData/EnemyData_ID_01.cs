@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyData_ID_00 : UnitData
+public class EnemyData_ID_01 : UnitData
 {
     private UnitData enemyData;
     public EnemyData_Info enemyData_Info;
@@ -45,13 +45,17 @@ public class EnemyData_ID_00 : UnitData
     {
         characterID = 10;
 
-        unitName = "木龍";
+        unitName = "璃弓石";
 
         // baseUnitData 陣列的說明:
         // 0: MaxHp   1: Hp  2: MaxMp   3: Mp   4: Attack  5: Defence    6: Speed */
         baseUnitData = new int[] {
-            1000,1000,100,100,
+            800,800,200,200,
             50,50,50};
+
+        /* totalUnitData 陣列的說明:    
+        0: totalMaxHp   1: totalHp  2: totalMaxMp   3: totalMp
+        4: totalAttack  5: totalDefence    6: totalSpeed */
 
         totalUnitData = new int[] {
         baseUnitData[0],baseUnitData[1],baseUnitData[2],baseUnitData[3],

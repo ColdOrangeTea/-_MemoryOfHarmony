@@ -28,7 +28,7 @@ public class Calculation_CharacterData : MonoBehaviour
             {
                 if (unitData.baseUnitData[1] == unitData.baseUnitData[0])
                 {
-                    Debug.Log(unitData.characterName + "HP滿的，無法使用物品");
+                    Debug.Log(unitData.unitName + "HP滿的，無法使用物品");
                     unitData = null;
                     return;
                 }
@@ -40,7 +40,7 @@ public class Calculation_CharacterData : MonoBehaviour
             {
                 if (unitData.baseUnitData[3] == unitData.baseUnitData[2])
                 {
-                    Debug.Log(unitData.characterName + "MP滿的，無法使用物品");
+                    Debug.Log(unitData.unitName + "MP滿的，無法使用物品");
                     unitData = null;
                     return;
                 }

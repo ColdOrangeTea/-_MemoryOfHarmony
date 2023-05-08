@@ -109,7 +109,7 @@ public class GameMenu_Show_UI_TeamNumber : MonoBehaviour // 遊戲選單中的UI
         percentage_Hp = (float_Hp / characterData_Info.characterData.baseUnitData[0]);
 
         // UI顯示位置在左側 和 右側 的血條位置不一樣
-        if (characterData_Info.characterData.teamNumber < 4)
+        if (characterData_Info.teamNumber < 4)
             percentage_Hp_For_Image = 1048 + (138.0f * percentage_Hp);
         else
             percentage_Hp_For_Image = 1528 + (138.0f * percentage_Hp);
@@ -123,7 +123,7 @@ public class GameMenu_Show_UI_TeamNumber : MonoBehaviour // 遊戲選單中的UI
         percentage_Mp = (float_Mp / characterData_Info.characterData.baseUnitData[2]);
 
         // UI顯示位置在左側 和 右側 的血條位置不一樣
-        if (characterData_Info.characterData.teamNumber < 4)
+        if (characterData_Info.teamNumber < 4)
             percentage_Mp_For_Image = 1048 + (138.0f * percentage_Mp);
         else
             percentage_Mp_For_Image = 1528 + (138.0f * percentage_Mp);
@@ -137,8 +137,9 @@ public class GameMenu_Show_UI_TeamNumber : MonoBehaviour // 遊戲選單中的UI
         // 抓取物件
         characterData_Info = GetComponent<CharacterData_Info>();
 
-        Character_TeamNumber_Text.text = (1 + characterData_Info.characterData.teamNumber).ToString();
-        Character_Name_Text.text = characterData_Info.characterData.characterName;
+        Character_TeamNumber_Text.text = (1 + characterData_Info.teamNumber).ToString();
+        Debug.Log("characterData_Info: " + characterData_Info);
+        Character_Name_Text.text = characterData_Info.characterData.unitName;
         Character_Hp_Text.text = characterData_Info.characterData.baseUnitData[1].ToString() + " / " + characterData_Info.characterData.baseUnitData[0].ToString();
         Character_Mp_Text.text = characterData_Info.characterData.baseUnitData[3].ToString() + " / " + characterData_Info.characterData.baseUnitData[2].ToString();
         // Debug.Log("characterData_Info: " + characterData_Info + " characterData_Info.characterData.hp: " + characterData_Info.characterData.hp);

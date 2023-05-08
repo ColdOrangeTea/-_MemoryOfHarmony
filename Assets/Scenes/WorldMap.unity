@@ -11441,16 +11441,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f565474b1c591e4e901c127b44f5112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 999
-  characterName: ' '
-  equipID: 000000000000000000000000
+  characterID: 999
+  unitName: ' '
   baseUnitData: 00000000000000000000000000000000000000000000000000000000
   totalUnitData: 00000000000000000000000000000000000000000000000000000000
-  isRecord: 0
+  equipID: 000000000000000000000000
   characterData: {fileID: 0}
-  info: {fileID: 0}
-  allInfo: []
-  InfoEmpty: {fileID: 1932147013}
+  characterData_Info: {fileID: 0}
+  characterData_AllInfo: []
+  characterData_InfoEmpty: {fileID: 1932147013}
+  teamNumber: 0
 --- !u!114 &658907447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11463,16 +11463,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5436e1932afee94faa87cd96d5f5827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 999
-  characterName: ' '
-  equipID: 000000000000000000000000
+  characterID: 999
+  unitName: ' '
   baseUnitData: 00000000000000000000000000000000000000000000000000000000
   totalUnitData: 00000000000000000000000000000000000000000000000000000000
-  isRecord: 0
+  equipID: 000000000000000000000000
   characterData: {fileID: 0}
-  info: {fileID: 0}
-  allInfo: []
-  InfoEmpty: {fileID: 1932147013}
+  characterData_InfoEmpty: {fileID: 1932147013}
+  teamNumber: 0
 --- !u!114 &658907448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11485,16 +11483,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a204c652f42523a47a952c954a19690a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 999
-  characterName: ' '
-  equipID: 000000000000000000000000
+  characterID: 999
+  unitName: ' '
   baseUnitData: 00000000000000000000000000000000000000000000000000000000
   totalUnitData: 00000000000000000000000000000000000000000000000000000000
-  isRecord: 0
+  equipID: 000000000000000000000000
   characterData: {fileID: 0}
-  info: {fileID: 0}
-  allInfo: []
-  InfoEmpty: {fileID: 1932147013}
+  characterData_InfoEmpty: {fileID: 1932147013}
+  teamNumber: 999
 --- !u!114 &658907449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11507,16 +11503,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee727a2dc0ea3941ba36940b7a9557d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 999
-  characterName: ' '
-  equipID: 000000000000000000000000
+  characterID: 999
+  unitName: ' '
   baseUnitData: 00000000000000000000000000000000000000000000000000000000
   totalUnitData: 00000000000000000000000000000000000000000000000000000000
-  isRecord: 0
+  equipID: 000000000000000000000000
   characterData: {fileID: 0}
-  info: {fileID: 0}
-  allInfo: []
-  InfoEmpty: {fileID: 1932147013}
+  characterData_InfoEmpty: {fileID: 1932147013}
+  teamNumber: 999
 --- !u!114 &658907450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11529,16 +11523,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 500851d1e99cb7d42a6e4dec5d791fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 999
-  characterName: ' '
-  equipID: 000000000000000000000000
+  characterID: 999
+  unitName: ' '
   baseUnitData: 00000000000000000000000000000000000000000000000000000000
   totalUnitData: 00000000000000000000000000000000000000000000000000000000
-  isRecord: 0
+  equipID: 000000000000000000000000
   characterData: {fileID: 0}
-  info: {fileID: 0}
-  allInfo: []
-  InfoEmpty: {fileID: 1932147013}
+  characterData_InfoEmpty: {fileID: 1932147013}
+  teamNumber: 999
 --- !u!114 &658907451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11551,16 +11543,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3bef385700cde44a4d01ffc7dfa004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 999
-  characterName: ' '
-  equipID: 000000000000000000000000
+  characterID: 999
+  unitName: ' '
   baseUnitData: 00000000000000000000000000000000000000000000000000000000
   totalUnitData: 00000000000000000000000000000000000000000000000000000000
-  isRecord: 0
+  equipID: 000000000000000000000000
   characterData: {fileID: 0}
-  info: {fileID: 0}
-  allInfo: []
-  InfoEmpty: {fileID: 1932147013}
+  characterData_InfoEmpty: {fileID: 1932147013}
+  teamNumber: 999
 --- !u!114 &658907452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11573,16 +11563,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db05ee9f4f9f7544a35cb51c45ff502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNumber: 999
-  characterName: ' '
-  equipID: 000000000000000000000000
+  characterID: 999
+  unitName: ' '
   baseUnitData: 00000000000000000000000000000000000000000000000000000000
   totalUnitData: 00000000000000000000000000000000000000000000000000000000
-  isRecord: 0
+  equipID: 000000000000000000000000
   characterData: {fileID: 0}
-  info: {fileID: 0}
-  allInfo: []
-  InfoEmpty: {fileID: 1932147013}
+  characterData_InfoEmpty: {fileID: 1932147013}
+  teamNumber: 999
 --- !u!1 &659187236
 GameObject:
   m_ObjectHideFlags: 0
