@@ -16,7 +16,7 @@ public abstract class UnitData : MonoBehaviour
 
     [Header("角色資料")]
     public int characterID = 999;
-    protected internal int enemyID = 999;
+    public int enemyID = 999;
 
     // // 角色在隊伍中的順序
     // public int teamNumber = 999;

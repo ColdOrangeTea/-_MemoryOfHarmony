@@ -26,8 +26,6 @@ public class EnemyData_ID_01 : UnitData
                 // Debug.Log(u.GetComponent<CharacterData_Info>());
                 if (u.GetComponent<EnemyData_Info>().enemyID == enemyID)
                 {
-                    if (enemyID == 0)
-                        enemyData = GetComponent<EnemyData_ID_00>();
                     if (enemyID == 1)
                         enemyData = GetComponent<EnemyData_ID_01>();
 
@@ -43,7 +41,7 @@ public class EnemyData_ID_01 : UnitData
 
     public override void InitUnitData()
     {
-        characterID = 10;
+        enemyID = 1;
 
         unitName = "璃弓石";
 
